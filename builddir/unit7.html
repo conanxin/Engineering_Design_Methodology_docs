@@ -1,0 +1,347 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>第7章 系列产品和组合产品的开发 &mdash; Engineering Design Methodology 1.0(beta) documentation</title>
+    
+    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0(beta)',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/sae.js"></script>
+    <link rel="top" title="Engineering Design Methodology 1.0(beta) documentation" href="index.html" />
+    <link rel="next" title="第8章 施工设计" href="unit8.html" />
+    <link rel="prev" title="第6章 技术设计" href="unit6.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="unit8.html" title="第8章 施工设计"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="unit6.html" title="第6章 技术设计"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Engineering Design Methodology 1.0(beta) documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="id1">
+<h1>第7章 系列产品和组合产品的开发<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id2">
+<h2>7.1系列产品<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>对制造厂来说，产品系列化有如下优点：</p>
+<ul class="simple">
+<li>在很多应用场合中，设计工作按一定的配置原则只需进行一次。</li>
+<li>只重复进行一定批量的生产，因此较为经济。</li>
+<li>能够获得高质量。</li>
+</ul>
+<p>对于用户来说，它有下列优点：</p>
+<ul class="simple">
+<li>产品价廉物美。</li>
+<li>供货快捷。</li>
+<li>备件的获得和补充不成问题。</li>
+</ul>
+<p>但对制造厂家和用户，产品系列化的缺点：</p>
+<ul class="simple">
+<li>参数选择受到限制，不一定能得到最佳的工作特性。</li>
+</ul>
+<p>所谓系列产品，就是这样的技术产物（机器、部件或零件），在广泛的应用范围内：</p>
+<ul class="simple">
+<li>在有多个参数等级的情况下</li>
+<li>用尽可能相同的制造方法</li>
+<li>以相同的解</li>
+<li>实现相同的功能</li>
+</ul>
+<p>如果除了参数分等级外还要附带满足其它功能，则在开发系列产品同时，还要开发组合产品系统。</p>
+<p>一个系列产品开发的实质，是从要开发的系列产品（机器、部件或零件）中的一种结构参数格式出发，
+按照一定的规律推导出其它各级大小的结构参数规格。其中那个原始规格的设计方案称为基础技术设计草案，
+由此推演出的其它参数规格称为后续技术设计草案。</p>
+<div class="section" id="id3">
+<h3>7.1.1相似定律<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>将“模型”看作原始的技术设计草案，即“基础技术设计草案”，而模型的最终“设计”看作是系列中的某个规格，
+即“后续技术设计草案”。</p>
+<p>与模型技术相比，系列产品开发通常还有其它目的，要：</p>
+<ul class="simple">
+<li>尽可能用相同的材料及</li>
+<li>相同的工艺</li>
+<li>达到同样高的材料利用率。</li>
+</ul>
+<p>当基础技术设计草案与后续技术设计草案中，至少有一个物理量之比保持为常量即不变时，便可以说具有相似性。</p>
+<p>如果基本参数比中，常数超过一个，则具有专门的相似性，并能对其做出特殊描述。
+当长度比和时间比同时为不变量时，称之为运动相似。当长度比和力比为常数时，则为静力相似。</p>
+<p>等应力的相似性</p>
+</div>
+<div class="section" id="id4">
+<h3>7.1.2十进制几何标准数系<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>应用标准数系的优点：</p>
+<ul class="simple">
+<li>适应现有的需求，这时各段可用不同的分级，以使参数分级与需求的重点相吻合。</li>
+<li>由于采用了基于标准数系的规格，从而减少了尺寸不同的方案数目，从而节省了在制造过程中用于样板、</li>
+</ul>
+<p>夹具和量具上的费用。
+* 因为数系的各项积和商仍然是一个几何数系的项，所以主要是乘和除的参数选择与计算就变得容易。
+* 如果一个构件或一台机器的尺寸是一个几何级数的项，在作线性方法或缩小时，
+如果放大或缩小的系数同样取自数系，则所得尺寸的数字亦在该数系中。
+* 一些重要的参数级独立地增大，而这些参数级与其它现有的或将要采用的数系是相互协调的。</p>
+</div>
+<div class="section" id="id5">
+<h3>7.1.3参数分级的选择<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>参数分级是根据多方面的观点来确定的：</p>
+<ul class="simple">
+<li>其一是从市场情况出发。市场通常希望有较细的分级，以便用尽可能适合的机器和设备参数来满足顾客的要求。</li>
+<li>第二个观点是来自设计和制造方面。参数分级必须从技术与经济观点来选择，</li>
+</ul>
+<p>一方面分级要足够细满足技术上的要求，但另一方面分级又要足够粗，以便使规格类型较少及各种零件的批量大，
+从而做到系列的经济加工。</p>
+<p>要确定最佳的参数分级，首先要掌握有关状况和需求方面的、有说服力和必须是可靠的信息：</p>
+<ul class="simple">
+<li>关于各个结构参数的市场（销售）需求预测。</li>
+<li>在规格调整而出现缺档时的市场特点。</li>
+<li>不同参数的分级的加工成本及加工工时，首先要掌握变化着的加工总成本，以及</li>
+<li>不同的参数分级下的产品特性。</li>
+</ul>
+<p>参数范围可按不变的或变化的级比来划分，可以在标准数系之间跳跃和在较粗和较细分的标准数系之间跳动。</p>
+<p>在分级时，必须把自变参数与因变参数区分开来。</p>
+</div>
+<div class="section" id="id6">
+<h3>7.1.4几何相似的产品系列<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="id7">
+<h3>7.1.5半相似产品系列<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<p>由于下列原因，会迫使系列明显偏离几何相似而要求其按别的规律增长：</p>
+<ul class="simple">
+<li>需要优先满足的相似定律。</li>
+<li>需要有点满足的任务书要求及</li>
+<li>需要优先满足的加工经济性要求。</li>
+</ul>
+<p>在这些情况下就导致开发所谓半相似系列。</p>
+<ol class="arabic">
+<li><p class="first">需要优先满足的相似定律</p>
+<blockquote>
+<div><p>重力的影响</p>
+<p>热力过程的影响</p>
+<p>不同的相似关系</p>
+</div></blockquote>
+</li>
+<li><p class="first">需要优先满足的任务要求</p>
+</li>
+</ol>
+<p>这种情况往往是由于人机关系而产生的。人在工作中接触的所有构件，
+都必须符合人的生理条件和人体尺寸。它们一般都不能随系列产品的名义参数而改变。</p>
+<p>一个要优先满足的任务要求，也可能是出于纯粹技术条件上的原因，这时外购件和生产产品并无几何相似的尺寸。</p>
+<ol class="arabic simple" start="3">
+<li>需要优先满足的加工经济性要求</li>
+</ol>
+<p>如果一个产品系列本身必须较细分级，则可以对其零件和部件采用较粗分级的方法，以求获得较大的工件批量，
+从而可能达到比较经济的加工。</p>
+<p>如果这些零部件所在不同的范围容许，功能上当然也没问题，就可以在细分级的产品系列中对它们进行粗分级。
+那么，这些部分与其紧接着的部分，便成了半相似系列。</p>
+<ol class="arabic simple" start="4">
+<li>利用指数方程进行调整</li>
+</ol>
+<p>所谓指数方程是一种简单的辅助手段，它根据相似关系的种类来考虑上面三点所述的条件，
+并用它们来开发半相似产品系列。</p>
+<ol class="arabic simple" start="5">
+<li>例子</li>
+</ol>
+</div>
+<div class="section" id="id8">
+<h3>7.1.6产品系列的开发<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<p>产品系列开发过程概括如下：</p>
+<ol class="arabic simple">
+<li>制定基础技术设计草案，它是从一个打算开发的产品系列中产生，或者从已有的产品定出。</li>
+<li>根据相似定律确定物理的函数关系（指数）。</li>
+<li>确定参数分级和参数线图的应用范围。</li>
+<li>调整由理论所得的系列，使之与优化标准或工艺条件相适应，并将这些偏差表示在参数线图上。</li>
+<li>通过对各部件或极端规格的临界区按比例画出结构图，以检查该产品系列。</li>
+<li>改进和完善文件资料，这些资料是在确定系列和制订加工文件的过程中所需要的。</li>
+</ol>
+</div>
+</div>
+<div class="section" id="id9">
+<h2>7.2组合产品<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<p>如果一个产品目录中有一个或多个参数规格必须满足各种不同的功能，便要分别设计为数众多的不同产品，
+这意味着要付出相当大的设计和制造费用。合理的做法是，用确定的零部件（功能结构块）组合成各种要求的功能变型。
+一个这样的组合可以利用组合产品原理来实现。</p>
+<p>组合产品指的是这样一些机器和零部件，它们</p>
+<ul class="simple">
+<li>往往作为具有不同解的结构块通过相互组合</li>
+<li>来实现不同的总功能。</li>
+</ul>
+<div class="section" id="id10">
+<h3>7.2.1组合产品系统学<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<p>组合产品系统由组合块构成，这些结构块可拆或不可拆地拼合成一体。</p>
+<p>要区分功能结构块和制造结构块。功能结构块是从满足技术功能的观点来确定的，
+因此它能够自身或通过其它功能结构块组合来实现技术功能。制造结构块则不是根据其功能，
+而纯粹是按照制造技术观点加以确定的。</p>
+<ul class="simple">
+<li>基本功能在一个系统中是基本的、反复出现和不可缺少的。它们基本上是不变的。</li>
+<li>辅助功能用于联接和接通，它通过辅助结构块来实现，这些辅助结构块通常为联接元件和接头。</li>
+<li>特殊功能是特殊的、补充的和任务书特别要求的分功能，它不一定必须在各种总功能变型中反复出现。</li>
+</ul>
+<p>特殊功能由特殊功能结构块来实现，特殊功能结构块表现为对基本结构块的一种特殊补充或作为一个附件，因而是可能结构块。</p>
+<ul class="simple">
+<li>适应功能是为了适应其它系统和边界条件所必须的。它通过适应结构块在物质上起作用。</li>
+</ul>
+<p>在组合系统中可能会出现难以预见的为任务书特别要求的功能，这些功能通过非结构块来实现。
+用了它，就成了由结构块和非结构块联合而成的一个混合系统。</p>
+<p>一个结构块的含义可以理解为一个组合产品系统内的一种等级排列。</p>
+<p>用模块使一个产品分段具体化：</p>
+<ul class="simple">
+<li>在单件生产且对功率和效率的要求常有很大变化的情况下，将组合产品划分为结构段（模块）是十分适当的。</li>
+<li>为了划分组合产品界限，可用带有有限个可以预见的变体数目的组合目录，在所谓闭式系统内，</li>
+</ul>
+<p>对组合产品系统的范围和可能性加以说明。</p>
+</div>
+<div class="section" id="id11">
+<h3>7.2.2组合产品的开发进程<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<p><strong>阐明任务书</strong></p>
+<p>在阐述要求和愿望时，必须借助于诸如任务所示的祝特征，仔细而全面地拟订为产品目录所实现的各个任务。
+一个产品系统要求表的特点是要求表有好几个总功能。因此就产生了该组合产品系统要满足的总功能变体。</p>
+<p><strong>建立功能结构</strong></p>
+<p>有了功能结构，即将所需的总功能划分为分功能，就已相当大程度地确定了系统的组合结构。</p>
+<p>建立功能结构时强调下列目标：</p>
+<ul class="simple">
+<li>力求用尽可能少和容易实现的基本功能的组合，来实现所要求的总功能。</li>
+<li>总功能按要求划分为若干基本功能，必要时还划分出辅助功能、特殊功能和适应功能，划分时应这样进行，</li>
+</ul>
+<p>即需求数量大的变体主要由基本功能组合，需求量很少的变体附带地作为特殊功能和适应功能。
+* 将若干个分功能集中到一个结构块上。</p>
+<p><strong>寻找作用原理和解的变体</strong></p>
+<p>首先要找到这样一些原理，它们允许在保持相同的作用原理及基本相同的结构设计的情况下，产生各种变体。</p>
+<p><strong>选择与评价</strong></p>
+<p>如果在已进行的工作步骤中，已找到若干个解的方案，就应按技术和经济准则对其评价，从而选出最有利的原理解。</p>
+<p><strong>总技术设计方案的制订</strong></p>
+<p>在结构设计指导原则的前提下，必须力求对组合产品所要求的基本结构块、特殊结构快、
+辅助结构块和适应结构块这样进行结构设计，即应使相同的和反复出现的工件数量大，
+而且这些工件用尽可能少的毛柸和加工工序制成。</p>
+<p>最佳的分解度，受到很多标准的影响：</p>
+<ul class="simple">
+<li>在注意到误差传播后果的同时，必须满足要求及质量指标。</li>
+<li>总功能变体应通过结构块（零件和部件）的简单装配产生。</li>
+<li>结构块只分解到功能能力所要求的、质量所要求的和成本所允许的程度。</li>
+<li>当组合产品系统被用户当作总系统，并由用户自己通过不同结构块的组合编排而成各种组合产品系统变体时，</li>
+</ul>
+<p>那些常用的结构块特别需要在强度和磨损方面，按要求的尽可能相同的工作寿命或易更换性，进行分解和安排。
+* 在根据成本和制造时间确定分解度时，要从整个组合产品进行考虑。</p>
+<p><strong>技术文件的制订</strong></p>
+<p>技术文件应能在任务完成过程中简单地、并且尽可能地用数据处理方法辅助编制，此外，
+它还能对预期的总功能变体作进一步处理。</p>
+<p>绘制相应图纸时，恰当的产品编号和分类很重要，因为这位结构块（零件和部件）相互成链奠定了基础。</p>
+<p>各结构块与产品变体的关系，在零件明细表中确定下来。采用所谓变体零件表制订零件表是很合适的，
+因为变体零件表是在产品组合结构的基础上制定的，并突出了必须结构块和可能结构块。</p>
+<p>平行编码特别适合于组合产品系统图纸和零件表编号，平行编码包含着一个与零件明确和不可更换的标记相一致的识别号码，
+以及一个按功能编排和用来调用这些零部件的分类号码。</p>
+</div>
+<div class="section" id="id12">
+<h3>7.2.3组合产品系统的优点和局限<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="id13">
+<h3>7.2.4例子<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">第7章 系列产品和组合产品的开发</a><ul>
+<li><a class="reference internal" href="#id2">7.1系列产品</a><ul>
+<li><a class="reference internal" href="#id3">7.1.1相似定律</a></li>
+<li><a class="reference internal" href="#id4">7.1.2十进制几何标准数系</a></li>
+<li><a class="reference internal" href="#id5">7.1.3参数分级的选择</a></li>
+<li><a class="reference internal" href="#id6">7.1.4几何相似的产品系列</a></li>
+<li><a class="reference internal" href="#id7">7.1.5半相似产品系列</a></li>
+<li><a class="reference internal" href="#id8">7.1.6产品系列的开发</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id9">7.2组合产品</a><ul>
+<li><a class="reference internal" href="#id10">7.2.1组合产品系统学</a></li>
+<li><a class="reference internal" href="#id11">7.2.2组合产品的开发进程</a></li>
+<li><a class="reference internal" href="#id12">7.2.3组合产品系统的优点和局限</a></li>
+<li><a class="reference internal" href="#id13">7.2.4例子</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="unit6.html"
+                        title="previous chapter">第6章 技术设计</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="unit8.html"
+                        title="next chapter">第8章 施工设计</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/unit7.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="unit8.html" title="第8章 施工设计"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="unit6.html" title="第6章 技术设计"
+             >previous</a> |</li>
+        <li><a href="index.html">Engineering Design Methodology 1.0(beta) documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013, ConanXin.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.
+    </div>
+  </body>
+</html>

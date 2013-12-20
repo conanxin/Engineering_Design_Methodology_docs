@@ -1,0 +1,1142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>第6章 技术设计 &mdash; Engineering Design Methodology 1.0(beta) documentation</title>
+    
+    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0(beta)',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/sae.js"></script>
+    <link rel="top" title="Engineering Design Methodology 1.0(beta) documentation" href="index.html" />
+    <link rel="next" title="第7章 系列产品和组合产品的开发" href="unit7.html" />
+    <link rel="prev" title="第5章 方案设计" href="unit5.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="unit7.html" title="第7章 系列产品和组合产品的开发"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="unit5.html" title="第5章 方案设计"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Engineering Design Methodology 1.0(beta) documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="id1">
+<h1>第6章 技术设计<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>技术设计的内容是由作用结构或原理解出发，
+按照技术和经济的观点，明确、完整地确定技术产品的组合结构。技术设计的结果就是解的方案的结构确定。</p>
+<div class="section" id="id2">
+<h2>6.1技术设计的工作步骤<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>技术设计过程的复杂性：</p>
+<ul class="simple">
+<li>许多工作必须同时平行进行，</li>
+<li>一些工作步骤要在更高的信息级别上重复，</li>
+<li>已经构形的区域受到补充和变化因素的影响，</li>
+</ul>
+<p>技术设计进程：</p>
+<ol class="arabic simple">
+<li>首先一步是从要求表、必要时由其摘要出发，在了解原理解（作用结构、方案）的基础上，制定出主要的决定结构的要求：</li>
+</ol>
+<ul class="simple">
+<li>决定尺寸的要求，</li>
+<li>决定布置的要求，</li>
+<li>决定材料的要求，</li>
+</ul>
+<ol class="arabic simple" start="2">
+<li>说明决定和限制结构设计的空间条件。</li>
+<li>在明确了带有空间条件的决定结构的要求以后，初选材料，进行组合结构的粗鲁构形。</li>
+<li>首先对确定结构的主功能载体进行粗略构形，也就是初步地估计其材料与形状。</li>
+<li>按照之前介绍的方法，对此时的技术设计草案进行判断。</li>
+<li>对由于是已知的、确定了的、次要的、或至今未确定结构等原因而尚未研究过的主功能载体，在要求的范围内补作粗略结构设计。</li>
+<li>确定哪些辅助功能是必要的，并且利用现有的解。</li>
+<li>对主功能载体进行精确结构设计。</li>
+<li>对辅助功能载体也进行精确的结构设计。</li>
+<li>按照技术与经济准则进行评价。</li>
+<li>确定初步的总体技术设计方案。</li>
+<li>消除评价时已发现的弱点。</li>
+<li>检查总体技术设计方案在功能、空间相容性等方面的缺陷及干扰因素，并在必要时加以改善。</li>
+<li>提出初步的零件表以及加工和装配说明书，从而完成最后有效的总体技术设计方案。</li>
+<li>确定总体技术设计方案，并且提交给施工设计。</li>
+</ol>
+</div>
+<div class="section" id="id3">
+<h2>6.2结构设计的导则<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p>结构设计的特征就是一个不断反复的思考和检查的过程。</p>
+<p>在每个结构设计的过程中，首先是通过与选择材料同时进行的参数计算去实现功能。</p>
+<p>经常采用初步计算的方法，得到初始的、按比例的图形，并可对空间相容性做粗略判断。</p>
+</div>
+<div class="section" id="id4">
+<h2>6.3结构设计的基本规则<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p>基本规则明确、简单和安全是从下面一般的目标设置推导出来的，即：</p>
+<ul class="simple">
+<li>满足技术功能，</li>
+<li>经济地实现设计目标，</li>
+<li>对人和环境均安全。</li>
+</ul>
+<p>对明确性的注意，有助于可靠地预先确定作用和性能，并且在很多情况下节省时间和昂贵的研究费用。</p>
+<p>简单性保证在正常情况下获得一个经济的解的方案。较少的零件数目和简单的结构型式，
+可以使加工较快、较好地进行。</p>
+<p>对安全性的要求，促使人们坚持根据耐用性、可靠性、消除事故以及保护环境等方面去处理问题。</p>
+<div class="section" id="id5">
+<h3>6.3.1明确<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>基本规则“明确”应用于：</p>
+<p><strong>功能</strong>：在一个功能结构内部必须</p>
+<ul class="simple">
+<li>建立带有各自特有的输入和输出量的分功能的明确排列关系。</li>
+</ul>
+<p><strong>作用原理</strong>：所选出的作用原理在物理效应方面应该能够</p>
+<ul class="simple">
+<li>描述原因和效应之间的关系，从而能正确且经济地进行参数计算。其作用结构必须</li>
+<li>确定能量流（或力流）、物料流和信号流的有次序的走向。</li>
+</ul>
+<p>考虑到由载荷引起的变形和温度引起的膨胀，应当</p>
+<ul class="simple">
+<li>在结构上预先安排沿一定方向伸长的可能性。</li>
+</ul>
+<p><strong>参数选择计算</strong>：为了进行参数计算和材料选择，在大小、种类、
+频繁度或者时间方面明确说明载荷状态是绝对必要的。</p>
+<p><strong>安全性</strong></p>
+<p><strong>人机工程</strong>：在人-机关系方面应当使得</p>
+<ul class="simple">
+<li>操作顺序及其实施利用相应的布置和接入方式按照合理的步序进行。</li>
+</ul>
+<p><strong>加工和检验</strong>：在图纸、零件表和说明书中采用明确和完整的说明，可以使得加工和检验变得容易些。</p>
+<p><strong>装配和运输</strong>：通过结构的构形使得装配必然按顺序进行，而排除错误的工作次序。</p>
+<p><strong>使用和维护</strong>：应当注意明确的构造和相应的构形，使得：</p>
+<ul class="simple">
+<li>工作结果一目了然，并且易于检查，</li>
+<li>维修能采用尽可能少的不同辅助材料及工具进行，</li>
+<li>维修可进行检查。</li>
+</ul>
+<p><strong>回用</strong>：应规定</p>
+<ul class="simple">
+<li>明确的可回用材料的分离位置及</li>
+<li>明确的装配及拆装顺序。</li>
+</ul>
+</div>
+<div class="section" id="id6">
+<h3>6.3.2简单<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p><strong>功能</strong>：</p>
+<ul class="simple">
+<li>尽可能少的分功能数目以及</li>
+<li>其间的联接明了而合乎逻辑。</li>
+</ul>
+<p><strong>作用原理</strong>：</p>
+<ul class="simple">
+<li>作用过程和组成件的数目少，</li>
+<li>规律清楚及</li>
+<li>费用低廉。</li>
+</ul>
+<p><strong>参数选择计算</strong>：</p>
+<ul class="simple">
+<li>几何形状是基础，它对列出材料力学和弹性力学的数学计算式是直接有用的。</li>
+<li>选择对称的形状，使得由加工、负载和温度引起的变形一目了然。</li>
+</ul>
+<p><strong>安全性</strong>：</p>
+<p><strong>人机工程</strong>：</p>
+<ul class="simple">
+<li>明确的操作过程，</li>
+<li>一目了然的布置方式及</li>
+<li>易于理解的信号</li>
+</ul>
+<p><strong>加工和检验</strong>：</p>
+<ul class="simple">
+<li>几何形状一般，能节省加工时间，</li>
+<li>加工方法少，能减少夹紧、调整和等待的时间，</li>
+<li>形状清楚，使得检验容易和迅速。</li>
+</ul>
+<p><strong>装配和运输</strong>：</p>
+<ul class="simple">
+<li>要装配的零件易于识别，</li>
+<li>能够迅速地理解装配工艺，</li>
+<li>每一个调整过程只要进行一次，</li>
+<li>避免已装配零件的重复装配。</li>
+</ul>
+<p><strong>使用和维护</strong>：</p>
+<ul class="simple">
+<li>用不着特别的和复杂的说明就可以使用，</li>
+<li>过程一目了然，对差错或干扰易于觉察，</li>
+<li>如果维修过程麻烦、不舒适和费时间，则停止进行。</li>
+</ul>
+<p><strong>回用</strong>：</p>
+<ul class="simple">
+<li>采用可回用的材料，</li>
+<li>装配和拆卸简单，</li>
+<li>部件本身简单</li>
+</ul>
+</div>
+<div class="section" id="id7">
+<h3>6.3.3安全<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>安全技术的概念、种类和范围</li>
+</ol>
+<ul class="simple">
+<li><strong>安全性</strong>：危险小于临界冒险度的一种事物状态。</li>
+<li><strong>临界冒险度</strong>：因设备而异的某一技术过程或技术状态可以承受的最大的危险程度。</li>
+<li><strong>保护</strong>：通过减少发生损伤的频繁度或损伤范围、或者同时减少这二者的相应预防措施，以减少冒险的程度。</li>
+<li><strong>可靠性</strong>：一个技术系统在给定的工作范围及规定的工作时间内满足由使用目的确定的工作要求的能力。</li>
+<li><strong>可用性</strong>：系统可正常提供使用的时间比例，可与日历时间或规定的额定时间相比。</li>
+<li><strong>运行安全性</strong>：包括技术系统运行时对危险的限制，使得系统本身及其直接环境不致损坏。</li>
+<li><strong>工作安全性</strong>：在工作时、即使用技术系统时，以及在工作环境之外、例如运动和休息时、对人的危害的限制。</li>
+<li><strong>环境安全性</strong>：对技术系统环境周围环境损害的限制。</li>
+<li><strong>保护措施</strong>：通过保护系统或保护措施限制已存在的危害，从而冒险性降低到可容许的程度。</li>
+</ul>
+<ol class="arabic simple" start="2">
+<li>直接安全技术原理</li>
+</ol>
+<p>直接安全技术要求借助参与本身工作的系统或构件获得安全性。</p>
+<p>为了确定和判断功能的可靠实现及构件的耐用度，确定一种安全性原理，基本上有下述三种类型:</p>
+<div class="highlight-python"><pre>1.“保持安全”原理
+2.“限制失效”原理
+3.“冗余配置”原理</pre>
+</div>
+<p><strong>保持安全原理</strong>：对所有的构件及其相互关系应如此处理，
+使得在规定的工作时间内能经受住所有的可能事件而不产生失效或干扰。</p>
+<p>通过下述措施保证：</p>
+<ul class="simple">
+<li>相应地弄清楚作用的负荷和环境条件。</li>
+<li>在可靠的假设和计算方法下的足够安全的计算。</li>
+<li>加工和装配中足够的、彻底的检查。</li>
+<li>在局部提高的载荷条件和当时的环境影响下，对构件或系统进行研究，以确定其耐用性。</li>
+<li>规定使用范围，而将可能产生失效的范围排除在外。</li>
+</ul>
+<p><strong>限制失效原理</strong>：允许在使用期限内产生功能干扰和破裂，但是不允许发生严重的后果。在这种情况下，应当：</p>
+<ul class="simple">
+<li>仍保持有限的功能或能力，以避免出现危险的状态，</li>
+<li>失效零件的有限的功能为其它零件所承担，直到设备或机器无危险地停止为止，</li>
+<li>缺陷或失效能够觉察出来，</li>
+<li>能够对失效部位作出对总的安全性起决定性作用的工作状态的判断。</li>
+</ul>
+<p>限制失效原理是以对损坏过程的了解和失效时承担或者保持有限功能的某种结构方案作为先决条件的。</p>
+<p><strong>冗余配置原理</strong>：既能提高系统的安全性，又能提高其可靠性的一种手段。</p>
+<p>积极的冗余：利用装置，在某单个大部件失效时，其功能也不会完全中断。
+消极冗余：在积极单元发生失效时接入的、一般在种类和尺寸上相等的贮备单元。
+原理冗余：多重配置在功能上一样，而作用原理不同。</p>
+<ol class="arabic simple" start="3">
+<li>间接安全技术原理</li>
+</ol>
+<p>间接安全技术包括保护系统和保护设施。</p>
+<p><strong>保护系统</strong>：在发生危险时引起保护反应。
+此该系统应在一个具有信号转换的功能结构中至少有一个获知危险的输入量和一个能消除危险的输出量。</p>
+<p>这种系统的作用结构是建立在具有获知、处理和发生作用等主要功能的功能结构的基础上的。</p>
+<p><strong>保护机构</strong>：以其自身的功能能力为基础，而无须信号转换就可以行使保护功能的技术结构。</p>
+<p><strong>保护设施</strong>：无须保护反应而具有保护功能。</p>
+<p><strong>基本要求</strong>：</p>
+<p>实现保护技术的所有安全技术措施必须满足下列基本要求：</p>
+<ul class="simple">
+<li>作用可靠</li>
+<li>强制有效</li>
+<li>不能回避</li>
+</ul>
+<p><strong>作用可靠意味着</strong>：作用原理和结构形状只可能有一个确切的作用方式；
+参与工作的部件按照可靠地规划进行计算；加工和装配在严格检查下进行；
+保护系统和保护措施已经经过了样机试验。</p>
+<p><strong>强制失效意味着</strong>：</p>
+<ul class="simple">
+<li>在引起危险的情况开始时和进行过程中，都必须起作用，</li>
+<li>当取消保护措施或保护设施时，引起危险的工作状态必须强迫停止。</li>
+</ul>
+<p><strong>不能回避意味着</strong>：既不能通过随机或非随机的变化，又不能通过外界干涉，
+而使得保护作用遭受破坏或不起作用。</p>
+<p><strong>保护系统</strong>：</p>
+<p>保护系统的任务：当存在危险时，自动产生保护反应，从而防止对人和物的损害。</p>
+<p>当出现危险时，避免危险发展：</p>
+<ul class="simple">
+<li>机器或设备停止运行，</li>
+<li>阻止启动。</li>
+</ul>
+<p>当危险持续存在时，避免危险起作用：</p>
+<ul class="simple">
+<li>引入保护措施。</li>
+</ul>
+<p>“可靠作用”、“强制生效”和“不能回避”的基本要求为下述要求所支持：</p>
+<p><strong>发出信号</strong>：在接入保护系统时，必须伴随一个信号，说明接入这一事实和机器断开的原因。</p>
+<p><strong>自监控</strong>：保护系统不仅应在危险状态下做出反应，而且在它本身存在妨碍正常保护作用的缺陷时，
+也应做出反应。这一要求最好通过按照静流原理的计算达到。</p>
+<p><strong>冗余</strong>：保护系统的失效是一种可能发生的情况。双重或多重地设置保护系统可以提高其安全性，
+这是由于不大可能所有设置的保护系统一次全部失效。</p>
+<p><strong>双稳态性</strong>：保护系统和保护机构必须安置在一定的起动阀值上。
+一旦达到此值，立即毫不延缓地、明确地做出保护反应。这一性能是通过所谓双稳态性而强制发生的。</p>
+<p><strong>防止重新起动</strong>：在保护系统通过双稳态特性使机器断开后，不允许自行恢复到正常运行状态，
+即使危险状态已不再存在也应如此。</p>
+<p><strong>可检验性</strong>：即使不存在危险状态的情况下，也应当能够检查保护系统的功能能力。</p>
+<p><strong>降低要求</strong>：只有在下述情况下，才可以有意识地降低要求，即产生失效的概率很低，
+而且在产生危险的情况下破坏性很小，以至允许放弃某些要求。当保护系统的检验简单可行，
+而且这样的检验可以按规律地强制进行，则在进一步考虑时，可以放弃对冗余方面的要求。</p>
+<p><strong>保护设施</strong>：
+保护设施的任务是将人和物从危险的地方分离开来，并保护他们不受各种形式危险输出（作用）的损害。</p>
+<p>所追求的原理解通过下列措施阻止接触：</p>
+<ul class="simple">
+<li>所有方向加罩，</li>
+<li>在某一方向盖住以防接触，</li>
+<li>在一定距离设置防护层。</li>
+</ul>
+<p>由人体四肢及其可及范围决定的安全距离起着重要的作用。</p>
+<p>4.安全技术的参数选择计算与检查</p>
+<p><strong>功能和作用原理</strong></p>
+<p>重要的问题是，采用选出的解能否安全和可靠地实现功能。必须同时考虑明显的和可能出现的干扰。</p>
+<p><strong>参数选择和计算</strong></p>
+<p>韧性，即塑性变形的能力，可以在应力分布不均匀时降低应力的峰值，
+是材料能够提供给我们的一个重要安全因素。</p>
+<p>稳定性，涉及所有的状态稳定和倾覆危险的问题，也涉及一个机器或装置的稳定运行问题。</p>
+<p>共振会造成不可确切估计的应力提高。</p>
+<p>注意热膨胀问题，以避免应力过大或者功能受到干扰。</p>
+<p><strong>人机工程学和工作安全性</strong></p>
+<p>起决定作用的是对危险根源和危险部位的了解。</p>
+<p><strong>加工和检验</strong></p>
+<p>零件的结构应能使得要求的质量特性也可能通过加工达到和遵守。
+这一点通过相应的、在必要情况下以规章强制的检验加以保证的。</p>
+<p><strong>装配和运输</strong></p>
+<p>在技术设计阶段就应当知道和考虑到在装配时与强度和稳定性有关的负载。</p>
+<p><strong>维修</strong></p>
+<p>使用和操作必须尽量安全。</p>
+<p><strong>成本和期限</strong></p>
+<p>成本和期限的约束不允许对安全性产生影响。</p>
+</div>
+</div>
+<div class="section" id="id8">
+<h2>6.4结构设计的原理<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id9">
+<h3>6.4.1力传导原理<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>力流和等结构强度原理</li>
+</ol>
+<blockquote>
+<div><p>在机械制造以及精密机械中的任务和求解，差不多都是在物料、
+能量和信号转换的相互关系上处理力和运动的产生以及其联结、转变、变化和导通的问题。</p>
+<p>力传导的概念，包括弯矩和扭矩的传导。</p>
+<p>以下情况是有好处的，即:</p>
+<div class="highlight-python"><pre>外载荷（作用在构件上的）影响
+截面力（纵向力、横向力、弯矩和扭矩），在构件内部引起
+应力（拉、压正应力，剪、扭切应力），并且造成
+弹性或塑形变形（伸长、缩短、横向收缩、弯曲、剪切和扭转）。</pre>
+</div>
+<p>等结构强度原理是通过合适地选择材料和形状力求在规定的时间内各处强度同样充分地得到应用。</p>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>直接和短程力传导原理</li>
+</ol>
+<blockquote>
+<div><p>要求从某一位置到另一位置的力或力矩尽可能引起最小的变形，最合适的办法是采取直接的和最短的传力路线。</p>
+<p>方法的选择主要取决于任务的性质:</p>
+<ul class="simple">
+<li>是否与力的传导有关，此时在构件刚度尽可能高的情况下其耐久性起决定性的作用，或者</li>
+<li>是否必须满足要求的力-变形关系，而耐久性仅仅是一个附属的、值得注意的问题。</li>
+</ul>
+<p>倘若已经超过屈服极限，应当考虑下述问题:</p>
+<ul class="simple">
+<li>如果结构受到力的作用，则产生相应的变形为必然的结果。</li>
+<li>如果构件发生变形，则存在相应的反作用力。</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>变形协调原理</li>
+</ol>
+<blockquote>
+<div><p>为了不出现具有尖峰应力的非均匀应力分布，
+考虑力流观点的结构设计应力求避免由于急剧的截面过度而引起的突然的“力流转向”和“力流密度”的变化。</p>
+<p>按照变形协调原理，应对参与工作的组件这样进行结构设计，
+使得载荷作用时在尽可能小的相对变形情况下借助于相应的同向变形而得到更进一步的匹配。</p>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li>力的平衡原理</li>
+</ol>
+<blockquote>
+<div><p>按照主功能的定义，那些用于直接实现功能的力和力矩，可以看成是决定功能的力参量。</p>
+<p>这些力或者力矩伴随主参量而生，并且固定地依附于它们，称它们为伴生的副参量。</p>
+<p>总的来说，对于力的传导应当做到:</p>
+<ul class="simple">
+<li>力流持续封闭，避免由于</li>
+<li>截面突然变化而引起的</li>
+<li>力流转向和力流密度变化。</li>
+</ul>
+<p>力流概念通过考虑下列各原理而加以补充：</p>
+<ul class="simple">
+<li><strong>等结构强度原理</strong>：力争借助于选择合适的材料和形状使得在规定的工作期限内在所有各处强度同样地得到高度充分利用。</li>
+<li><strong>直接和短程的力传导原理</strong>：使得材料消耗、体积、重量和变形最小，特别适用于要求构件刚度大的情况。</li>
+<li><strong>变形协调原理</strong>：考虑由应力所引起的变形，寻找具有相互协调变形机理的布置方式，从而避免应力提高，并且可靠地实现其功能。</li>
+<li><strong>力的平衡原理</strong>：寻找合适的平衡元件或者借助于对称的布置，将伴随主参量生成的副参量限制在尽可能小的范围内，从而降低结构成本和消耗。</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="id10">
+<h3>6.4.2任务分配原理<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>分功能的配置</li>
+</ol>
+<blockquote>
+<div><p>根据任务分配原理，每一个功能配置一个功能载体。</p>
+<p>由于将单个任务分开后，可以对每个分功能进行合适的优化结构设计和明确的计算，因而任务分配原理具有下述优点：</p>
+<ul class="simple">
+<li>可以更好地对有关构件作较好的充分利用。</li>
+<li>允许获得较高的工作能力。</li>
+<li>保证得到正确的性能，从而支持了基本规则“明确”。</li>
+</ul>
+<p>为了检验任务分配原理能否有效地应用，要对功能进行分析，并且不会在同时完成多个功能时</p>
+<ul class="simple">
+<li>产生约束或发生</li>
+<li>彼此之间的阻碍或干扰。</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>功能不同时的任务分配</li>
+<li>功能相同时的任务分配</li>
+</ol>
+<blockquote>
+<div>倘若功率或量值增加到某一极值，可以将同一功能分配至多个相同的功能载体。</div></blockquote>
+</div>
+<div class="section" id="id11">
+<h3>6.4.3自助原理<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><strong>概念与定义</strong></li>
+</ol>
+<blockquote>
+<div><p>按照自助原理，通过巧妙地选择系统元件以及其在系统中的布置，达到自身互相支持的效应，从而有助于较好地实现其功能。</p>
+<p>在自助结构中，由原始作用和辅助作用组成所要求的总作用。</p>
+<p>原始作用引入工作过程，建立必要的起始状态，并且其效果往往相当于传统的没有辅助作用的解，然而其有效程度相应地比较低。</p>
+<p>辅助作用则是来自功能的主参量和伴随而生的副参量，只要给定它们之间的排列关系即可。</p>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><strong>自加强解</strong></li>
+</ol>
+<blockquote>
+<div>自加强解就是在正常负荷下由作用于功能的主参量和副参量在确定的排列方式下取得某种辅助作用，从而使得总的作用加强。</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><strong>自平衡解</strong></li>
+</ol>
+<blockquote>
+<div>自平衡也是在正常负荷下由作一定安置的伴生副参量相对主参量获得辅助作用，从而抵消了起始的作用，从而达到平衡，使总作用得到提高。</div></blockquote>
+<ol class="arabic simple" start="4">
+<li><strong>自保护解</strong></li>
+</ol>
+<blockquote>
+<div>在超负荷情况下，倘若没有规定的断裂状态的要求，则构件不应损坏。</div></blockquote>
+</div>
+<div class="section" id="id12">
+<h3>6.4.4稳定性和双稳定性原理<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>稳定性原理</li>
+</ol>
+<blockquote>
+<div>在结构上设计时应预先做到干扰会引起抵消或至少自相削弱的作用。</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>双稳定性原理</li>
+</ol>
+<blockquote>
+<div>在开关和保护系统中，要求具有双稳定性能。</div></blockquote>
+</div>
+</div>
+<div class="section" id="id13">
+<h2>6.5结构设计准则<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id14">
+<h3>6.5.1概述<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="id15">
+<h3>6.5.2考虑膨胀的合理设计<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
+<p>技术系统中应用的材料具有受热膨胀的性质。</p>
+<ol class="arabic simple">
+<li>膨胀现象</li>
+<li>构件的膨胀</li>
+</ol>
+<blockquote>
+<div>如果温度不随时间变化，则称之为稳定膨胀。倘若温度分布随时在变化，则称之为非稳定的、亦即随时间变化的膨胀。</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>构件之间的相对膨胀</li>
+</ol>
+<blockquote>
+<div><p><strong>稳定相对膨胀</strong></p>
+<blockquote>
+<div><p>在稳定状况下，当时的平均温差与时间无关。如欲减小相对膨胀，可采取措施在线膨胀系数相同的情况下，使得温度相同，或者在不同温度下选配具有不同膨胀系数的材料。</p>
+<p>如果材料不能够任意选择，就必须进行相应的温度协调。</p>
+</div></blockquote>
+<p><strong>非稳定相对膨胀</strong></p>
+<blockquote>
+<div>若温度随时间而变化，由于各个零件的温度可能有很大的差别，以致经常产生比最后的稳定状态大很多的相对膨胀。</div></blockquote>
+</div></blockquote>
+</div>
+<div class="section" id="id16">
+<h3>6.5.3考虑蠕变和松弛的合理设计<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>温度下的材质性质</li>
+</ol>
+<blockquote>
+<div>设计在温度下的构件时，除了膨胀效应外，还要考虑有关材料的蠕变性质。</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>蠕变</li>
+</ol>
+<blockquote>
+<div><p>蠕变是与所承受的应力、作用温度和时间有关的。</p>
+<p>室温下的蠕变</p>
+<p>极限温度以下的蠕变</p>
+<p>极限温度以上的蠕变</p>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>松弛</li>
+</ol>
+<blockquote>
+<div>在总伸长量不变情况下弹性伸长部分减小的过程称之为“松弛”。</div></blockquote>
+<ol class="arabic simple" start="4">
+<li>设计措施</li>
+</ol>
+<blockquote>
+<div><p>结构设计时，通过下列途径，使得蠕变保持在一定的允许范围内：</p>
+<ul class="simple">
+<li>高的弹性伸长贮备，使得由于温度变化引起的附加应力很小。</li>
+<li>绝缘或构件冷却，</li>
+<li>避免在非稳定过程中引起热应力的质量聚积。</li>
+<li>防止材料沿着可能损害功能或者造成拆卸困难不利方向蠕变。</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="id17">
+<h3>6.5.4考虑腐蚀的合理设计<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h3>
+<p>设计师必须采用适当的方案或者通过合理的结构设计防止不可容许的腐蚀现象。</p>
+<ol class="arabic simple">
+<li>腐蚀的原因和现象</li>
+</ol>
+<blockquote>
+<div>设计师采取的措施取决于腐蚀的原因和现象。</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>自由表面的腐蚀</li>
+</ol>
+<blockquote>
+<div><p>自由表面的腐蚀可能是均匀的表面腐蚀或者是局部的有限腐蚀。</p>
+<p><strong>均匀表面腐蚀</strong></p>
+<blockquote>
+<div><p>原因：存在来自空气或介质的氧气的同时出现潮气，特别是在露点下降时更为严重。</p>
+<p>现象：扩展性的产生均匀损耗在表面腐蚀。</p>
+</div></blockquote>
+<p><strong>凹坑腐蚀</strong></p>
+<blockquote>
+<div>原因：存在具有阳性与阴性区域的腐蚀电池，主要由于材料的不均匀性、介质方面的不同浓度、或者由于区域性的不同条件，引起了腐蚀进展的不一致。</div></blockquote>
+<p><strong>孔穴腐蚀</strong></p>
+<blockquote>
+<div>原因：同坑穴腐蚀，但限制在窄小的区间里。</div></blockquote>
+<p><strong>狭缝腐蚀</strong></p>
+<blockquote>
+<div>原因：大多数是由于在缝隙中腐蚀产物的水解作用而造成电解液的酸性浓缩。</div></blockquote>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>与接触有关的腐蚀</li>
+</ol>
+<blockquote>
+<div><p><strong>接触腐蚀</strong></p>
+<blockquote>
+<div>原因：由于材料配对形成两种金属带有不同的电位，或者由于存在电解液，即导电的液体或潮气而使固体处于导电联结中。</div></blockquote>
+<p><strong>沉积腐蚀</strong></p>
+<blockquote>
+<div>原因：在表面或缝隙中有沉积异物，这些沉积异物在有关位置引起电位差。</div></blockquote>
+<p><strong>相界腐蚀</strong></p>
+<blockquote>
+<div>原因：由于与金属表面接触的介质从液相向气相转变，或者反之，在金属表层的突变区产生腐蚀的危险有所增加。</div></blockquote>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li>与应力有关的腐蚀</li>
+</ol>
+<blockquote>
+<div><p><strong>振动裂纹腐蚀</strong></p>
+<blockquote>
+<div>原因：对受到交变机械应力的零件的腐蚀侵蚀会导致强度的剧烈下降。</div></blockquote>
+<p><strong>应力裂纹腐蚀</strong></p>
+<blockquote>
+<div>原因：当由于外载荷或内应力引起的静拉力和导致裂纹的特殊因素同时作用时，某些敏感材料在一定的时间后会形成穿过晶体的或晶间的裂纹。</div></blockquote>
+<p><strong>延伸诱导腐蚀</strong></p>
+<blockquote>
+<div>原因：由于反复的延伸、墩粗作用，超过极限值后，覆盖层破裂，以致不再存在自然腐蚀保护层，并且出现局部腐蚀。</div></blockquote>
+<p><strong>流体浸蚀腐蚀、气蚀腐蚀和摩擦腐蚀</strong></p>
+<blockquote>
+<div>主要的补救措施是采用流体力学或者设计的方法避免或减少浸蚀和气蚀的出现，只有做不到这点时，才考虑采用硬的表面覆盖层。</div></blockquote>
+<p><strong>选择性腐蚀</strong></p>
+<blockquote>
+<div>原因：某些组织成分或者晶界附近区域的抗腐蚀性能低于基体。</div></blockquote>
+</div></blockquote>
+<ol class="arabic simple" start="5">
+<li>考虑腐蚀的合理设计举例</li>
+</ol>
+</div>
+<div class="section" id="id18">
+<h3>6.5.5考虑人机工程的合理设计<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h3>
+<p>人机工程从人的特性、能力和需要出发，研究人和技术产物之间的关系。</p>
+<p>利用人机工程的知识，通过相应的结构设计达到下述要求：</p>
+<ul class="simple">
+<li>技术产物与人相适应，或</li>
+<li>通过对人员的遴选以及教育和训练，使得人对技术活动或技术系统能合宜地适应。</li>
+</ul>
+<ol class="arabic simple">
+<li>人机工程基础知识</li>
+</ol>
+<blockquote>
+<div><p>生物力学观点</p>
+<p>生理学观点</p>
+<p>心理学的观点</p>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>人的活动和人机工程条件</li>
+</ol>
+<blockquote>
+<div><p>在技术活动中，人可能主动地或者被动地介入到或者关联到技术活动中去。</p>
+<dl class="docutils">
+<dt><strong>人的主动贡献</strong></dt>
+<dd>在技术系统中，人的作用的显明性和合理性是按效益、经济和宜人性的观点来衡量的。</dd>
+</dl>
+<p><strong>人的被动反应</strong></p>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>对人机工程要求的认识</li>
+</ol>
+<blockquote>
+<div><p>对对象的考虑</p>
+<p>对作用关系的考虑</p>
+</div></blockquote>
+</div>
+<div class="section" id="id19">
+<h3>6.5.6考虑造型的合理设计<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>任务和目的</li>
+</ol>
+<blockquote>
+<div>技术产品不应只以相应的某个功能结构从纯粹实现某个目的的意义上来满足所要求的技术功能，而且应在令人心情愉快的美学方面对人产生吸引力。</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>造型合理的特征</li>
+</ol>
+<blockquote>
+<div><p>用所选出的技术解形成的技术功能，以及由此而产生的结构，
+一般由有关零件和组件的布置和形状确定其外形构造。这样就产生了很少能改变的功能结构设计。</p>
+<p>人们不仅感觉到这些功能性结构设计，而且感知更多确定的特征，这形成了特征结构设计。</p>
+<dl class="docutils">
+<dt><strong>面向市场和使用方面的特征</strong></dt>
+<dd><p class="first">对于总体结构设计基本上应达到：</p>
+<ul class="last simple">
+<li>简单、统一、单纯、风格真实。</li>
+<li>整齐、成比例、相似。</li>
+<li>可描述、可解释。</li>
+</ul>
+</dd>
+<dt><strong>面向目的的特征</strong></dt>
+<dd>这些特征应使得目的能够认识和可以感觉到。</dd>
+</dl>
+<p><strong>面向操作的特征</strong></p>
+<dl class="docutils">
+<dt><strong>面向制造厂、销售商及商标的特征</strong></dt>
+<dd>这些特征对产品的来源、公司的风格、企业的体系进行了表达。</dd>
+</dl>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>造型的准则</li>
+</ol>
+<blockquote>
+<div><p>特征结构设计是通过一种特定的要求的表达来实现的。</p>
+<p>选择一定的表达方式</p>
+<ul class="simple">
+<li>采用与目标相适应的明显、统一的表达方式。</li>
+</ul>
+<p>构造总体外形</p>
+<ul class="simple">
+<li>以可标记的方式进行布置。</li>
+<li>分解成界限明显的区段。</li>
+</ul>
+<p>统一形状</p>
+<ul class="simple">
+<li>形状和位置变型少，</li>
+<li>采用原则上选出的形状，规定相应的相似形状单元和相配的棱线走向。</li>
+</ul>
+<p>色彩的支持</p>
+<ul class="simple">
+<li>色彩布置与形状布置相协调。</li>
+<li>尽量采用少的色调和材料差别。</li>
+<li>在采用多色彩时，规定一种特征色，并与衬色相协调。</li>
+</ul>
+<p>通过图形加以补充</p>
+<ul class="simple">
+<li>采用风格相同的字体和图形符号。</li>
+<li>通过相同的图版制造方法，</li>
+<li>图形在大小、形状和色彩方面与其余部分的形状和色彩北京相协调。</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="id20">
+<h3>6.5.7考虑工艺的合理设计<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>设计——生产的关系</li>
+</ol>
+<blockquote>
+<div><p>设计方面的决策对生产成本、生产时间和生产质量有重要影响。
+考虑工艺的合理结构设计的目的在于：通过设计上的措施，力求生产成本和生产时间最少，
+并且获得符合要求的与生产有关的质量特征。</p>
+<p>考虑工艺的合理组合结构，通过对产品按照部件和单个零件进行分类，
+以自制件或作为新零件、重复件或标准件的外购件的形式确定其工艺过程。</p>
+<p>考虑工艺的合理工件结构，决定单个零件的加工方法，加工手段和质量。</p>
+<p>考虑工艺的合理材料选择，从本身方面确定加工方法、加工手段、材料经济性和质量检验。</p>
+<p>标准件和外来件的应用，对生产能力、仓库管理和经济性产生影响。</p>
+<p>考虑工艺的合理生产文件，必须考虑生产方式、工作过程和质量检验。</p>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>考虑工艺的合理组合结构</li>
+</ol>
+<blockquote>
+<div><p>根据工艺要求，可按分解、集成、联接或组合件结构方式的观点对产品组合结构进行分类。</p>
+<p>分解结构方式，把单一个部件分解成多个在制造技术上有利的工件。
+分解结构方式的优点：</p>
+<ul class="simple">
+<li>可以应用容易买到和得到的半成品或标准件。</li>
+<li>锻件和铸件较易取得。</li>
+<li>与企业生产设备相适应。</li>
+<li>即使在单件和小批生产中，也提高了工件的批量。</li>
+<li>减少了工件尺寸，从而易于装配和运输。</li>
+<li>由于材料的均质性而比较容易保证质量的可靠性。</li>
+<li>维修较容易，</li>
+<li>容易适应特殊要求。</li>
+<li>减少超期危险性，缩短生产流程。</li>
+</ul>
+<p>缺点或使用局限性：</p>
+<ul class="simple">
+<li>较高的切削加工消耗。</li>
+<li>较高的装配费用。</li>
+<li>较高的用于保证质量的耗费。</li>
+<li>由于结合部位引起功能或负荷受到限制。</li>
+</ul>
+<dl class="docutils">
+<dt>集成结构方式</dt>
+<dd>所谓集成结构方式是把多个单个零件统一成一个工件。</dd>
+<dt>联接结构方式</dt>
+<dd><p class="first">联接结构方式可以理解为：</p>
+<ul class="last simple">
+<li>将多个已制成的不同胚件用不可拆方式联接在一块，成为进一步待加工的工件。</li>
+<li>同时利用多种联接方法作工件的联接。</li>
+<li>多种材料的组合，用以最有利地利用其性能。</li>
+</ul>
+</dd>
+<dt>组合件结构方式</dt>
+<dd>如果通过分解结构形式把一个机器结构拆开，使所得到的工件和组件同样可以用于企业中其它的产品或者产品变体中，那么这就是所谓制造组合件。</dd>
+</dl>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>考虑工艺的工件合理结构设计</li>
+</ol>
+<blockquote>
+<div><p>设计师通过对工件形状、尺寸、表面质量、公差和配合的选择，会对下列几个方面起到影响：</p>
+<ul class="simple">
+<li>所考虑的制造方法。</li>
+<li>可以应用的机床，包括加工和测量工具。</li>
+<li>在广泛采用企业内部的重复件以及合适的标准件和外购件情况下的自制和外加工问题。</li>
+<li>材料和半成品的选择及其利用和</li>
+<li>质量检查的可能性。</li>
+</ul>
+<dl class="docutils">
+<dt>考虑原型成形工艺</dt>
+<dd>对于铸造材料的构件，其结构应考虑造模合理、成形合理、铸造合理以及加工合理。
+对于烧结构件，其结构应当考虑工具合理和烧结合理。</dd>
+<dt>考虑变形成形工艺</dt>
+<dd>对于变形成形零件的毛柸结构，应当考虑的工艺方法：自由模锻和冲模锻（压力成形）、冷挤压和拉伸（挤压成形）以及弯曲成形。</dd>
+</dl>
+<p>对于自由锻，由于没有应用复杂的锻造装置，因而只要考虑锻造合理即可。其结构设计准则为：</p>
+<ul class="simple">
+<li>力求形状简单，并且尽可能设计成平行的表面和采用大的圆角。</li>
+<li>力求锻件不要过重，在有的情况下可以分开然后联接起来。</li>
+<li>避免过大变形及过大的断面差。</li>
+<li>优先采用单面冲孔或凸台。</li>
+</ul>
+<p>对于模锻成形，应尽量作出工具合理，锻造合理和加工合理的结构设计。</p>
+<p>冷挤压</p>
+<p>拉伸</p>
+<p>弯曲成型，应当力求其结构切断合理和弯曲合理。</p>
+<dl class="docutils">
+<dt>考虑分离工艺</dt>
+<dd>结构设计准则应当是工具合理和切削合理。</dd>
+</dl>
+<p>工具合理意味着</p>
+<ul class="simple">
+<li>规定有足够的夹紧可能性。</li>
+<li>优先采用无需重新夹持工件或工具的加工方法。</li>
+<li>注意刀具必要的退刀行程。</li>
+</ul>
+<blockquote>
+<div>对于所有的分离方法，切削合理意味着：
+* 避免不必要的切削加工，亦即加工面、表面质量和公差限制在非要不可的范围内。
+* 力求加工表面与夹持表面平行或者垂直。
+* 优先采用车、钻加工方法，然后才是铣、刨加工方法。</div></blockquote>
+<dl class="docutils">
+<dt>考虑联接</dt>
+<dd>焊接工艺过程可分为准备、焊接及后处理三个步骤。</dd>
+</dl>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li>考虑工艺的材料和半成品合理选择</li>
+</ol>
+<blockquote>
+<div><p>按照柸件或半成品的种类、技术供货条件以及后处理和质量，根据这些特征标志选出来的材料，对下列各项产生影响：</p>
+<ul class="simple">
+<li>制造方法。</li>
+<li>机床，包括刀具和量具。</li>
+<li>材料管理性，</li>
+<li>质量检查。</li>
+<li>自生产和外生产问题。</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="5">
+<li>标准件和外来件的应用</li>
+</ol>
+<blockquote>
+<div><p>采用自制件或者外来件，取决于：</p>
+<ul class="simple">
+<li>件数（单件、成批或者大量生产）。</li>
+<li>与订货相关的单件产品或者一个面向市场的产品系列和组合系统。</li>
+<li>材料、外购件或者外协件的获取状况（成本、供货期限）。</li>
+<li>企业内已有加工设备使用的可能性。</li>
+<li>加工设备的配置状态。</li>
+<li>已有的或争取达到的自动化程度。</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="6">
+<li>考虑工艺合理的技术文件</li>
+</ol>
+</div>
+<div class="section" id="id21">
+<h3>6.5.8便于装配的合理设计<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>装配操作</li>
+</ol>
+<blockquote>
+<div>装配可理解为在零件加工期间和加工之后以及在施工现场包括所有必要辅助工作的组装活动。
+装配的费用和质量既决定于装配操作的种类和次数，也决定于其本身进行的情况。种类和次数则与组合结构、工件结构和生产类型有关。</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>便于装配的合理组合结构</li>
+</ol>
+<blockquote>
+<div><p>专配合理的组合结构通过对装配操作的下述处理而达到：</p>
+<ul class="simple">
+<li>分解。</li>
+<li>缩减。</li>
+<li>统一和</li>
+<li>简化。</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>便于装配的结合部位合理结构设计</li>
+</ol>
+<blockquote>
+<div>通过减少、统一和简化接合部位，可以降低用于联接元件、装配操作以及对联接件质量要求的费用。</div></blockquote>
+<ol class="arabic simple" start="4">
+<li>便于装配的结合零件合理结构设计</li>
+<li>应用和选择导则</li>
+</ol>
+<blockquote>
+<div><p>整理归纳要求表中确定及影响装配的要求和愿望：</p>
+<ul class="simple">
+<li>单件产品或者变型系列。</li>
+<li>变型件数。</li>
+<li>安全技术限制和法规限制。</li>
+<li>加工条件和装配条件。</li>
+<li>试验要求和质量特征标志。</li>
+<li>运输要求和包装要求。</li>
+<li>维护和回用方面对装配和拆卸的要求。</li>
+<li>用户使用对装配操作的要求。</li>
+</ul>
+<p>认真研究原理解（作用结构），特别是初步技术设计草案（组合结构），以便充分利用结构上使装配简便的可能性。</p>
+</div></blockquote>
+</div>
+<div class="section" id="id22">
+<h3>6.5.9有利于标准化的合理设计<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>标准化的目标</li>
+</ol>
+<blockquote>
+<div>标准化可理解为关于解的统一和解的确定的总概念。</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>标准的种类</li>
+<li>标准的准备</li>
+<li>有利于标准化的合理结构设计</li>
+</ol>
+<blockquote>
+<div><p>标准应用的提示：</p>
+<blockquote>
+<div><p>功能，规定的总功能和分功能是否能通过应用标准而得以实现？</p>
+<p>作用原理，现有的标准是否促进合理的解的原理或者方案的进一步发展？</p>
+<p>结构设计，在结构设计时，应注意基本标准和专业标准、特别是草图标准、设计标准、尺寸标准、材料标准和安全标准。</p>
+<p>安全性，对于企业、工作和环境的安全性，应遵守已有的标准和法律规定。</p>
+<p>人机工程</p>
+<p>生产</p>
+<p>检查，试验标准和检查规则对于保证质量很重要。</p>
+<p>装配，正确无误的装配是通过遵守有关公差、配合和联接件的标准、以及注意试验标准和检查规则而得到保证的·。</p>
+<p>运输</p>
+<p>使用</p>
+<p>维护</p>
+<p>回用</p>
+<p>费用，成本和时间期限可通过工厂标准而将至最低。</p>
+</div></blockquote>
+</div></blockquote>
+<ol class="arabic simple" start="5">
+<li>标准开发</li>
+</ol>
+</div>
+<div class="section" id="id23">
+<h3>6.5.10有利于回用的合理设计<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>概述</li>
+</ol>
+<blockquote>
+<div><p>为节省原材料，可考虑下列几种可能性：</p>
+<ul class="simple">
+<li>通过合理利用材料和减少加工废料的办法，减少材料的应用量。</li>
+<li>采用代用材料，即用便宜的、可长期供应的材料代替紧缺的、因而也是价格昂贵的原材料。</li>
+<li>通过取回加工废料、产品或产品零部件，将它们重新应用或利用，以实现回用。</li>
+</ul>
+<p>生产废料回用是把加工废料取回，送到新的生产过程中去。</p>
+<p>产品使用过程中的回用是在保持产品形式的情况下取回用过的产品或产品零部件，从而进入一个新的使用阶段。</p>
+<p>旧物料回用是把用过的产品和旧物料取回送到新的生产过程中去。</p>
+<p>在回用循环中可能有不同的回用形式，基本上可分为对产品重新应用和利用两大类。</p>
+<p>应用的特点是继续保证产品的形状。按照产品的重新应用是否完成原有的功能，又可区分为重复应用和转换应用两类。</p>
+<p>利用要破坏原有的产品形式，因而一开始便有较大的价值损失。按照利用时是否采用原有的制造方法，又可区分为重复利用及转换利用两类。</p>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>回用过程</li>
+</ol>
+<blockquote>
+<div><dl class="docutils">
+<dt><strong>处理</strong></dt>
+<dd><p class="first">通过加压的办法将零散的废料压实。</p>
+<p>通过废钢剪或气剪的办法把笨重的或巨大的旧产品破裂。</p>
+<p>利用根据锤碾原理制造的破碎装置可以将废料进行分离。</p>
+<p>浮选装置接在粉碎装置和磨碎装置之后，用于较好地对有色金属和非金属部分进行分选。落锤机用于碎裂大的厚壁灰铸铁件。化学处理装置用于在重新冶炼前提出有害的物质和合金。</p>
+<p>具有单一原料高回用价值率的最好废料或称高质量废料是通过在处理过程以前进行的旧产品拆卸而达到的。</p>
+<p class="last">设计师应通过选出的组合结构和联接工艺为经济的拆卸创造前提条件。</p>
+</dd>
+<dt><strong>整修</strong></dt>
+<dd><p class="first">为了在第一个使用阶段后重复应用和转换应用产品，要求有一个整修过程。此过程由下列步骤组成：</p>
+<ul class="simple">
+<li>彻底的拆卸。</li>
+<li>清洗。</li>
+<li>检验。</li>
+<li>重复应用值得保存的部分，维修磨损区域，修整配合部分，将不能再用的零件用新的零件代替。</li>
+<li>重复装配。</li>
+<li>检验。</li>
+</ul>
+<p class="last">在专门的车间或产品生产部门进行整修可以以两种方式进行。第一种可能性是保持老产品的统一性不变，
+即在更换和修整零件时保持其相互关系，而对其制造公差进行调整。另一种可能性则是将老产品完全拆开，
+所有的零件在公差方面像新零件一样对待。</p>
+</dd>
+</dl>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>设计措施</li>
+</ol>
+<blockquote>
+<div><p>设计过程中对回用的考虑</p>
+<p>为了考虑回用的观点，在设计过程的各个步骤中，应注意：</p>
+<blockquote>
+<div><p>在要求表中给出在考虑经济性条件下有利于处理和整修的回用条件。</p>
+<p>在功能结构中尽量采取促进回用的功能分离。</p>
+<p>在方案设计中优先采用促进回用的作用原理和作用结构。</p>
+<p>特别是在确定组合结构时要注意回用的观点。</p>
+</div></blockquote>
+<p>在技术设计过程中考虑处理和整修的准则：</p>
+<ul class="simple">
+<li>采用合适的联接方式，使得拆卸和重新装配方便。</li>
+<li>可能进行整修。</li>
+<li>材料选择考虑利用的相容性，并且腐蚀最小。</li>
+<li>便于检验和分类。</li>
+<li>清洗能够彻底。</li>
+</ul>
+<p>在对工艺文件进行施工设计时，也要标明回用策略和回用工艺。</p>
+<p><strong>有利于处理过程的产品结构设计准则</strong></p>
+<blockquote>
+<div><p>材料相容性：由于便于利用的单独材料产品很少出现，应当尽量采用在利用时相容、并且从而能经济地、高质量地利用的不可分整体性的材料组合。</p>
+<p>材料分离：倘若产品的不可分的零件和组件不能达到相容的话，则应通过附加的结合部位使之能进一步分开，以便于在处理的过程中通过拆卸而将不相容的材料分离。</p>
+<p>便于处理的结合部位：能够用于优质的和经济的处理的结合部位应当是易于拆卸、人手可及的、并且应尽量安排在产品的外部。</p>
+<p>贵重材料：贵重、紧缺的材料应当特别仔细地按照拆开的要求进行布置，并且作上标记。</p>
+<p>危险材料：对于在处理或直接利用时会对人、设备和环境产生危险的材料，无论如何要可拆分地、也就是可拆出地进行布置。</p>
+</div></blockquote>
+<p><strong>有利于整修过程的产品结构设计准则</strong></p>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li>有利于回用的合理结构设计举例</li>
+</ol>
+<blockquote>
+<div><p>滑动轴承座的旧材料回用</p>
+<p>家用机械的旧材料回用</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="id24">
+<h2>6.6克服设计错误、干扰量影响和冒险<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id25">
+<h3>6.6.1错误和干扰因素的识别<a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h3>
+<p>是否能及早地识别错误性质，原则上正确地探知干扰的影响，并且在必要的情况下减少这种影响。</p>
+<ol class="arabic simple">
+<li>错误树分析</li>
+</ol>
+<blockquote>
+<div><p>错误性质和干扰影响可以应用与方法学进程有关的所谓错误树分析方法有效地查找出来。</p>
+<p>由方案设计阶段一斤得知包含各个可以实现的分功能的功能结果。通过技术设计的加工，
+同样也知道了所要求的从功能。用它对功能结构进行补充。对于某一部件或者要检查的区域，
+所有必要的功能都可以描述出来。</p>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>干扰量影响</li>
+</ol>
+<blockquote>
+<div>当分功能的排列和组合不明确时，干扰来自功能结构。当物理效应不能在高度和均匀性上取得假设的效果时，
+则干扰主要来自作用原理。所选择的理论结构由于不稳定的材料性质以及由加工和装配引起的形状、
+位置和表面的偏差，就会得到与原先规定不同的特性。</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>处置方法</li>
+</ol>
+<blockquote>
+<div><p>为了寻找和排除错误和干扰因素，可以采取下述方法：</p>
+<ul class="simple">
+<li>功能识别和否定。</li>
+<li>按照为技术设计过程制定的导则，寻找不能实现功能的原因。</li>
+<li>确定出现错误状态所必须具备的那些先决条件。</li>
+<li>在设计范围内通过其它的解、改善的解或者在制造、装配、运输、使用和维护中的检验措施，引入相应的补救办法。</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="id26">
+<h3>6.6.2考虑冒险的合理结构设计<a class="headerlink" href="#id26" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>冒险的对策</li>
+</ol>
+<blockquote>
+<div>在考虑冒险的合理设计中，技术上与经济上的冒险应当协调，一方面保证制造厂在经验方面获得有用的利益，
+另一方面也保证用户获得可靠的、无损害的运行状态。</div></blockquote>
+<ol class="arabic simple" start="2">
+<li>考虑冒险的合理结构设计举例</li>
+</ol>
+</div>
+</div>
+<div class="section" id="id27">
+<h2>6.7技术设计的评价<a class="headerlink" href="#id27" title="Permalink to this headline">¶</a></h2>
+<p>在技术设计阶段，特别是当评价仅仅是对最终有效的技术设计方案进行判断时，
+则评价也同时意味着重要的对薄弱部位的寻找。</p>
+</div>
+<div class="section" id="id28">
+<h2>6.8方案设计及技术设计举例<a class="headerlink" href="#id28" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">第6章 技术设计</a><ul>
+<li><a class="reference internal" href="#id2">6.1技术设计的工作步骤</a></li>
+<li><a class="reference internal" href="#id3">6.2结构设计的导则</a></li>
+<li><a class="reference internal" href="#id4">6.3结构设计的基本规则</a><ul>
+<li><a class="reference internal" href="#id5">6.3.1明确</a></li>
+<li><a class="reference internal" href="#id6">6.3.2简单</a></li>
+<li><a class="reference internal" href="#id7">6.3.3安全</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id8">6.4结构设计的原理</a><ul>
+<li><a class="reference internal" href="#id9">6.4.1力传导原理</a></li>
+<li><a class="reference internal" href="#id10">6.4.2任务分配原理</a></li>
+<li><a class="reference internal" href="#id11">6.4.3自助原理</a></li>
+<li><a class="reference internal" href="#id12">6.4.4稳定性和双稳定性原理</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id13">6.5结构设计准则</a><ul>
+<li><a class="reference internal" href="#id14">6.5.1概述</a></li>
+<li><a class="reference internal" href="#id15">6.5.2考虑膨胀的合理设计</a></li>
+<li><a class="reference internal" href="#id16">6.5.3考虑蠕变和松弛的合理设计</a></li>
+<li><a class="reference internal" href="#id17">6.5.4考虑腐蚀的合理设计</a></li>
+<li><a class="reference internal" href="#id18">6.5.5考虑人机工程的合理设计</a></li>
+<li><a class="reference internal" href="#id19">6.5.6考虑造型的合理设计</a></li>
+<li><a class="reference internal" href="#id20">6.5.7考虑工艺的合理设计</a></li>
+<li><a class="reference internal" href="#id21">6.5.8便于装配的合理设计</a></li>
+<li><a class="reference internal" href="#id22">6.5.9有利于标准化的合理设计</a></li>
+<li><a class="reference internal" href="#id23">6.5.10有利于回用的合理设计</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id24">6.6克服设计错误、干扰量影响和冒险</a><ul>
+<li><a class="reference internal" href="#id25">6.6.1错误和干扰因素的识别</a></li>
+<li><a class="reference internal" href="#id26">6.6.2考虑冒险的合理结构设计</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id27">6.7技术设计的评价</a></li>
+<li><a class="reference internal" href="#id28">6.8方案设计及技术设计举例</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="unit5.html"
+                        title="previous chapter">第5章 方案设计</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="unit7.html"
+                        title="next chapter">第7章 系列产品和组合产品的开发</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/unit6.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="unit7.html" title="第7章 系列产品和组合产品的开发"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="unit5.html" title="第5章 方案设计"
+             >previous</a> |</li>
+        <li><a href="index.html">Engineering Design Methodology 1.0(beta) documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013, ConanXin.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.
+    </div>
+  </body>
+</html>

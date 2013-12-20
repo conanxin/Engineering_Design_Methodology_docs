@@ -1,0 +1,348 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>第10章 计算机辅助设计 &mdash; Engineering Design Methodology 1.0(beta) documentation</title>
+    
+    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0(beta)',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/sae.js"></script>
+    <link rel="top" title="Engineering Design Methodology 1.0(beta) documentation" href="index.html" />
+    <link rel="prev" title="第9章 成本估算" href="unit9.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="unit9.html" title="第9章 成本估算"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Engineering Design Methodology 1.0(beta) documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="id1">
+<h1>第10章 计算机辅助设计<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="id2">
+<h2>10.1数据处理<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id3">
+<h3>10.1.1数据技术的基础知识<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>数据处理装置、通用的数据处理系统或者设计用CAD系统，能够接收、存贮、加工和输出数据。</p>
+<p>数据按种类可分为字符型和图像型。字符型数据主要用于计算机操作和文件加工，
+图像型数据则主要用于工作结果的图形表达和几何对象的描述。</p>
+<p>为了接收、存贮、加工和输出数据，必须进行合适的数据管理。</p>
+<p>借助于一个与应用程序严格分开的数据管理系统，可以实现将必要的和待加工的数据，
+特别是以计算机内部模型的型式存在的数据，放在各个数据文件或者一个数据库中存贮和管理。</p>
+<p>数据库和数据库管理系统组成数据库系统。</p>
+</div>
+<div class="section" id="id4">
+<h3>10.1.2对象的计算机内部描述<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>为了在计算机内部产生一个真实的技术对象，首先必须定义一个实质模型。</p>
+<p>从实质模型所含的对象出发，可以通过格式化完成信息模型的描述。</p>
+<p>体模型有实体结构和表面结构两种。所谓实体结构，就是在事实上用一些实体进行描述。
+这些实体CAD系统中也被称之为基本实体。在具有表面结构的体模型中，
+则采用由轮廓元素和点所组成的一系列表面来描述对象。</p>
+<p>信息模型的图形是用计算机内部模型和计算机内部描述来表示的，
+它通过所谓生成模型（联接模型，生产模型）来实现。</p>
+</div>
+<div class="section" id="cad">
+<h3>10.1.3CAD系统的结构<a class="headerlink" href="#cad" title="Permalink to this headline">¶</a></h3>
+<p>设计部门所使用的程序系统基本上应该由下列各部分程序合成：</p>
+<ul class="simple">
+<li>通信部分，负责从设计师处输入数据和向设计师输出数据；</li>
+<li>方法部分，包括与专业有关的工作模块，并利用这些模块实现模型化、提供信息和进行计算；</li>
+<li>数据管理部分（数据库管理系统），它组织方法、算法和通信部分与数据库系统或数据文件之间的全部数据传输和数据存贮；</li>
+<li>数据库，包括全部存贮的几何数据和非几何数据，这些数据是设计方法以及设计师与CAD系统之间通信所必需的。</li>
+</ul>
+</div>
+<div class="section" id="id5">
+<h3>10.1.4计算机装备和运行<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="id6">
+<h2>10.2设计各阶段中计算机的使用<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id7">
+<h3>10.2.1概论<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="id8">
+<h3>10.2.2经过选择的例子<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><strong>计算</strong></li>
+</ol>
+<blockquote>
+<div><p>计算操作在设计中是进行校核（对一个已经设计好的零件的特性计算）、
+参数选择（按给定要求确定一个零件的尺寸）和优化（通过参数变异追求最优解）所必须的。</p>
+<p><strong>校核程序</strong></p>
+<p><strong>参数选择计算程序</strong></p>
+<dl class="docutils">
+<dt><strong>优化程序</strong></dt>
+<dd>可以看作是较高级的参数选择程序。它与参数选择程序的区别在于，它力求通过被考察参数的变异，使一个特定值或一个特定函数值趋向极值（最优值）。</dd>
+<dt><strong>仿真程序</strong></dt>
+<dd>要研究和表示对象的主要特征相对于时间的关系，例如运动过程，为这一目的服务的程序，称为仿真程序。</dd>
+</dl>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><strong>结构设计</strong></li>
+<li><strong>提供信息</strong></li>
+<li><strong>CAD的其它方面应用</strong></li>
+</ol>
+</div>
+</div>
+<div class="section" id="id9">
+<h2>10.3使用CAD系统时的工作技术<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
+<p>表示任务的模型，可以是标准化了的任务要求的特征标志。利用这些特征标志，
+可以把提出的任务编成程序，输入计算机。</p>
+<p>表示功能的模型，可以是一般功能或者逻辑功能的框图（功能结构）。</p>
+<p>表示结构的模型</p>
+<div class="section" id="id10">
+<h3>10.3.1一个几何模型的产生<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<p>用于产生一个几何模型的主要工作技术，就是以基本实体为基础和以表面为基础的处理方法。</p>
+<p><strong>以基础实体为基础的处理方法</strong></p>
+<blockquote>
+<div>利用这种处理方法可以由一系列几何单元实体出发，建立一个三维的构件几何形体。</div></blockquote>
+<p><strong>以表面为基础的处理方法</strong></p>
+<blockquote>
+<div><p>这一工作技术最适宜于辅助技术设计，因为它：</p>
+<ul class="simple">
+<li>能够使空间边界条件看得清楚，</li>
+<li>能够用预先确定的几何元素使图形表示结构化，</li>
+<li>能够利用辅助几何图形的元素产生棱边。</li>
+</ul>
+</div></blockquote>
+<p><strong>宏技术</strong></p>
+<blockquote>
+<div>宏技术的基础是应用已经存在的零部件的几何模型。</div></blockquote>
+<p><strong>改建技术</strong></p>
+<blockquote>
+<div>这一工作技术的基础是，从手工输入的二维视图出发，进一步自动化地构成三维模型。</div></blockquote>
+<p><strong>输入方法</strong></p>
+</div>
+<div class="section" id="id11">
+<h3>10.3.2一个几何模型的改变<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="id12">
+<h3>10.3.3技术设计时的工作技术<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<p><strong>要减少剖面图和视图的数量</strong></p>
+<p><strong>通过输入基本体和面使几何图形的产生得到简化</strong></p>
+<p><strong>有许多决定必须很早就作出</strong></p>
+<p><strong>先进行粗略结构设计，然后进行局部的精确结构设计</strong></p>
+<p><strong>简单几何图形的生成促使产品结构趋向统一和更便于加工制造</strong></p>
+<p><strong>巨大的图形生成工作量迫使设计师利用重复零件的标准件</strong></p>
+</div>
+<div class="section" id="id13">
+<h3>10.3.4例子<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="id14">
+<h2>10.4CAD技术的可能性和局限性<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="id15">
+<h2>10.5CAD的引进<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h2>
+<p><strong>教育水平</strong></p>
+<p><strong>可接受性</strong></p>
+<p><strong>经济性</strong></p>
+</div>
+<div class="section" id="id16">
+<h2>10.6软件设计<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id17">
+<h3>10.6.1工作步骤<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt><strong>阐明并精确规定任务书</strong></dt>
+<dd>这一阶段的结果是一个具有约束力的要求表和一个评价系统。要求表的内容主要是描述一个初步的、
+用户所要求的功能结构。</dd>
+<dt><strong>方案设计阶段</strong></dt>
+<dd><p class="first">建立功能结构和数据结构：功能结构由许多分功能组成。这些分功能之间用数据流相连，
+并且随后依靠程序技术通过功能模块加以实现。</p>
+<p>在功能结构化的同时，必须建立数据结构。一个数据结构由分数据区域组成。
+这些分数据区域合在一起构成了程序系统的总数据存贮量。</p>
+<p>为已经定义的分功能寻找作用原理：寻找作用原理以实现某个分功能时，
+要注意到作用结构的特征。这里可以把作用原理分成下列几种：</p>
+<ul class="simple">
+<li>结构原理：数据模块从数据库中取出和重新存入的算法。</li>
+<li>操作原理：通过对输入数据进行数学和逻辑操作产生输出数据。</li>
+<li>通信原理：把计算机内部数据提供给用户，或对用户数据左前处理，使其适合于计算机内部处理。</li>
+</ul>
+<p>作用原理的组合：在复杂程度相同的水平上，可以按照功能结构实现作用原理的组合。</p>
+<p class="last">原理解决方案的非格式具体化：找到的总解决方案应构成文件，文件的完善程度以是否能够根据它进行评价为准。</p>
+</dd>
+<dt><strong>技术设计阶段</strong></dt>
+<dd><p class="first">程序的技术设计阶段与机械系统的技术设计阶段不同之处主要在于：
+程序的精细结构设计的全部工作都在制定技术文件阶段中才得以完成。</p>
+<p>把系统设计方案结构化，亦即分成确定结构的主模块，其它主模块和副模块：</p>
+<ul class="simple">
+<li>主模块：为实现主要的应用功能所必须的功能模块或数据模块，</li>
+<li>副模块：用以实现不很重要的应用功能的功能模块或数据模块。</li>
+</ul>
+<p>因此这类功能在要求表中可能是以愿望的方式提出。</p>
+<p class="last">确定结构的主模块的粗略结构设计：首先进行主模块的粗略结构设计，
+亦即先借助于数据纸把它们具体化到必要的程度，接着进行主功能模块的粗略结构设计，
+与此同时要注意到数据模块说明。</p>
+</dd>
+</dl>
+<p><strong>粗略技术设草案的选择</strong></p>
+<p><strong>其余主模块的粗略结构设计</strong></p>
+<p><strong>副模块的粗略结构设计</strong></p>
+<p><strong>按技术经济标准进行评价</strong></p>
+<dl class="docutils">
+<dt><strong>制定技术文件阶段</strong></dt>
+<dd><p class="first">在注意到副模块的前提下进行主模块的精细结构设计：
+精细结构设计在这里可以理解为对每一功能模块和数据模块都必须执行下列步骤：</p>
+<ul class="simple">
+<li>通过加上为所使用的程序语言特有的细节，而使数据和功能模块的说明得以实现。</li>
+<li>研究和确定与语言有关的信息，研究和确定实现输入输出的方式。</li>
+<li>把功能模块的粗略结构设计方案具体化，使之称为框图结构。</li>
+<li>使数据模块具体化，并实现数据模块说明。</li>
+<li>把框图结构和数据模块说明转换成所选择的程序语言。</li>
+<li>编译已经程序化的功能模块，必要时让各部分分别试运转，消除错误。</li>
+<li>就是否必须作超越模块界限的修改进行检查。</li>
+<li>制定技术文件。</li>
+</ul>
+<p>副模块的精细结构设计：</p>
+<p class="last">把设计好的模块综合成为一个能够运行的试验版本：现在可以把已经设计好的、编译过的、
+而且已经试算过的各个模块，合成为一个可以运行的程序系统，进行总试验。</p>
+</dd>
+</dl>
+<p><strong>根据技术经济标准进行评价</strong></p>
+<p><strong>正确性分析和可靠性分析</strong></p>
+<dl class="docutils">
+<dt><strong>薄弱环节分析和效率分析</strong></dt>
+<dd><p class="first">完善技术文件：最终有效的程序文件至少应该包括：</p>
+<ul class="last simple">
+<li>要求表，</li>
+<li>评价系统，</li>
+<li>功能结构及其说明，</li>
+<li>功能等级，</li>
+<li>数据结构及其说明，</li>
+<li>寻找和选择解决原理的技术文件，</li>
+<li>具有粗略技术设计草案、框图结构或数据说明的模块说明。</li>
+<li>在各个阶段进行评价和选择决策的文件，</li>
+<li>带有对最终程序产品的注解的源代码，</li>
+<li>使用手册，</li>
+<li>带有试验数据说明的试验记录，</li>
+<li>关于正确性、可靠性、效率和薄弱环节分析的文件。</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="id18">
+<h3>10.6.2结构设计建议<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h3>
+<p>明确的结构设计意味着：每一个功能模块精确地完成它在功能结构中被赋予的任务。</p>
+<p>简单的结构设计意味着：所有算法应该尽可能用线性化描述。</p>
+<p>安全的结构设计意味着：</p>
+<p>直接和短的控制流原理意味着：每一个模块的程序流程应该尽可能短而且没有回跳的途径。</p>
+<p>效率协调原理是指在程序中一起工作的模块或者分程序的运行时间应该差不多相同。</p>
+<p>任务分配原理是通过把复杂的程序分解成许多具有基本结构特征的模块来实现的。</p>
+<p>在结构设计中注意到可能的失误，这意味着程序模块都具有定义了的接口，使其更易于更换。</p>
+<p>按标准化原则进行结构设计意味着应用标准程序、标准数据结构和标准控制结构，此外还可以应用技术文件标准。</p>
+<p>便于制造的结构设计：能运行的程序的产生和装机都要靠源程序的支持。</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">第10章 计算机辅助设计</a><ul>
+<li><a class="reference internal" href="#id2">10.1数据处理</a><ul>
+<li><a class="reference internal" href="#id3">10.1.1数据技术的基础知识</a></li>
+<li><a class="reference internal" href="#id4">10.1.2对象的计算机内部描述</a></li>
+<li><a class="reference internal" href="#cad">10.1.3CAD系统的结构</a></li>
+<li><a class="reference internal" href="#id5">10.1.4计算机装备和运行</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id6">10.2设计各阶段中计算机的使用</a><ul>
+<li><a class="reference internal" href="#id7">10.2.1概论</a></li>
+<li><a class="reference internal" href="#id8">10.2.2经过选择的例子</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id9">10.3使用CAD系统时的工作技术</a><ul>
+<li><a class="reference internal" href="#id10">10.3.1一个几何模型的产生</a></li>
+<li><a class="reference internal" href="#id11">10.3.2一个几何模型的改变</a></li>
+<li><a class="reference internal" href="#id12">10.3.3技术设计时的工作技术</a></li>
+<li><a class="reference internal" href="#id13">10.3.4例子</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id14">10.4CAD技术的可能性和局限性</a></li>
+<li><a class="reference internal" href="#id15">10.5CAD的引进</a></li>
+<li><a class="reference internal" href="#id16">10.6软件设计</a><ul>
+<li><a class="reference internal" href="#id17">10.6.1工作步骤</a></li>
+<li><a class="reference internal" href="#id18">10.6.2结构设计建议</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="unit9.html"
+                        title="previous chapter">第9章 成本估算</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/unit10.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="unit9.html" title="第9章 成本估算"
+             >previous</a> |</li>
+        <li><a href="index.html">Engineering Design Methodology 1.0(beta) documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013, ConanXin.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.
+    </div>
+  </body>
+</html>

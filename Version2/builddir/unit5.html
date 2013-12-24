@@ -1,0 +1,410 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>第5章 方案设计 &mdash; Engineering Design Methodology 1.0(beta) documentation</title>
+    
+    <link rel="stylesheet" href="_static/nature.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '1.0(beta)',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/sae.js"></script>
+    <link rel="top" title="Engineering Design Methodology 1.0(beta) documentation" href="index.html" />
+    <link rel="next" title="第6章 技术设计" href="unit6.html" />
+    <link rel="prev" title="第4章 制定产品计划和阐明任务" href="unit4.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="unit6.html" title="第6章 技术设计"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="unit4.html" title="第4章 制定产品计划和阐明任务"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">Engineering Design Methodology 1.0(beta) documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="id1">
+<h1>第5章 方案设计<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<p>方案设计：在阐明了任务书以后，通过抽象化、建立功能结构、寻求合适的作用原理并将其组合，而确定原理解。</p>
+<div class="section" id="id2">
+<h2>方案设计的工作步骤<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>在阐明任务书后即进入方案设计阶段。</p>
+</div>
+<div class="section" id="id3">
+<h2>抽象化以认清本质<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id4">
+<h3>抽象的目的<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>在抽象化时，略去了个性和偶然性，而企求突出普遍适用的和本质的东西。</p>
+</div>
+<div class="section" id="id5">
+<h3>抽象化和课题表述<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>一个任务所具有的普遍意义和本质性的东西，可通过功能关系和与任务相关的主要约束条件方面的分析，
+并从要求表中一步一步地抽象化来获得:</p>
+<div class="highlight-python"><pre>第1步：在思想上撇开愿望；
+第2步：撇开不直接涉及功能和本质性约束条件的必达要求；
+第3步：将定量的说明改成定性的，从而简缩为本质性陈述；
+第4步：有意义地扩大认识；
+第5步：不偏向于某种解地将课题表述成文。</pre>
+</div>
+<p>本步骤的结果是在抽象阶面上定义目标，而不确定具体的某种解。</p>
+</div>
+<div class="section" id="id6">
+<h3>有系统地扩展课题表述<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>这一进程的特点是：将课题的表述一步一步地扩展到尽可能宽的程度。</p>
+<p>抽象化的进程有助于识别虚假的限制条件，只让真正的条件保留下来。</p>
+</div>
+</div>
+<div class="section" id="id7">
+<h2>建立功能结构<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id8">
+<h3>总功能<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<p>如果表述总任务时抓住了核心，也就可表达出总功能，
+它就用框图表示能量、物料、和（或）信号转换方面输入量和输出量间的关系，而不偏向某种解。</p>
+</div>
+<div class="section" id="id9">
+<h3>分解为分功能<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<p>任务之复杂程度指的是这种关系中输入和输出间的关系可以看清楚到什么程度，
+所需物理过程有多少层次，以及预期中的部件和零件的数目有多大。</p>
+<p>任务所需要的总功能可以分解成分功能，将各个功能结合起来，就得到功能结构，就表达了总功能。</p>
+<p>当前这一工作步骤的目标是：</p>
+<ul class="simple">
+<li>将所需要的总功能分解为分功能，以使接着求解较为容易；</li>
+<li>将这些分功能结合成简单、明确的功能结构。</li>
+</ul>
+<p>在地道的新设计中，通常既不知道单个分功能，也不知道它们是如何结合的。</p>
+<p>在适应性设计时，结构组成及其部件和零件在很大程度上是已知的。可以通过进一步开发的产品进行分析，来建立功能结构。</p>
+</div>
+<div class="section" id="id10">
+<h3>逻辑关系考察<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<p>与-功能、或-功能和非-功能以及它们组合成的复合功能如非或-功能（带有非的或）、非与-功能（带有非的与）、
+或借助双稳态的存贮功能，这些称为逻辑功能。</p>
+</div>
+<div class="section" id="id11">
+<h3>物理关系考察<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<p>物理关系是通过将各个有关物理量结合起来的一个相应功能结构来表达的。</p>
+<p>应当把结构中凡是明确存在的主流首先建立起来，以便进一步求解时考虑副流。</p>
+</div>
+<div class="section" id="id12">
+<h3>功能结构实践<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h3>
+<p>建立功能结构时，要区分新设计和适应性设计。</p>
+<p>新设计时，功能结构的出发点是要求表和抽象的课题表述。</p>
+<p>在适应性设计这种形式的继续开发工作中，是通过分析结构元件，从已知解得到功能结构作为初始开端。</p>
+</div>
+</div>
+<div class="section" id="id13">
+<h2>寻求作用原理<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h2>
+<p>作用原理包含为实现一个功能所需的物理效应及几何和物料特征标志。</p>
+<div class="section" id="id14">
+<h3>传统的辅助手段<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li><strong>查阅文献</strong></li>
+</ol>
+<blockquote>
+<div>技术状况方面的信息，可以从来自多方面的专业书刊、从查阅专利、以及从竞争者产品的说明而获得。</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><strong>分析自然系统</strong></li>
+</ol>
+<blockquote>
+<div>研究自然界中的形状、结构、生物和过程，以及利用生物学中获得的知识，可以引出有多方面用途而技术上新颖的解。</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><strong>分析已知技术系统</strong></li>
+</ol>
+<blockquote>
+<div>可借以一步一步地并且可以重现地从已知解导出新的或改进的变型。</div></blockquote>
+<ol class="arabic simple" start="4">
+<li><strong>类比考察</strong></li>
+</ol>
+<blockquote>
+<div>将现有的课题或意想中的系统转移到类比物上去。</div></blockquote>
+<ol class="arabic simple" start="5">
+<li><strong>测量、模型试验</strong></li>
+</ol>
+<blockquote>
+<div>在已做成的系统上进行测量，利用相似力学进行模型试验，以及其它的实验研究。</div></blockquote>
+</div>
+<div class="section" id="id15">
+<h3>偏重于直觉的方法<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
+<p>纯粹的直觉工作方式有下列缺点：</p>
+<ul>
+<li><p class="first">正确的突发思想不在恰当时刻到来，因为它是不能被强迫来的。</p>
+</li>
+<li><p class="first">由于现有的传统和自己僵化的先入之见，认识不到新的途径。</p>
+</li>
+<li><p class="first">由于信息不够，新工艺或新流程没有渗透到设计师的感悟之中。</p>
+<div class="highlight-python"><pre>1.智暴法
+2.635法
+3.陈列法
+4.德尔菲法
+5.联想法
+6.复合应用</pre>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="id16">
+<h3>偏重逻辑思维的方法<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h3>
+<p>通过有意识按步骤的进程来获得解。</p>
+<ol class="arabic simple">
+<li>系统地研究物理事件</li>
+<li>依靠编排表式进行系统的寻求</li>
+</ol>
+<blockquote>
+<div><p>一方面，编排表式会启发人们沿某些方向寻求进一步的解；
+另一方面，易于认识本质性的解的特征标志和相应的联接可能性。</p>
+<p>编排依据或其参数的选择，具有决定性意义。</p>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li>目录的应用</li>
+</ol>
+<blockquote>
+<div><p>目录是一定设计任务或分功能的已知解或经过考验的解的汇编。</p>
+<p><strong>对设计目录的要求</strong>：</p>
+<ul class="simple">
+<li>可快速地根据任务的需要来检索目录中汇编的解或数据；</li>
+<li>汇编入的解谱要充分完备，至少是可以补全的；</li>
+<li>尽可能完全独立于部门或工厂，以使其广泛可用；</li>
+<li>既可用于传统的设计过程，亦可用于采用计算机时。</li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="id17">
+<h2>作用原理的组合<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h2>
+<p>为了实现任务书中所要求的总功能，必须从解（作用原理）场通过组合成为作用结构的方法来制定总解（系统综合）。</p>
+<p>这个组合步骤的主要问题，是识别各个需要连接起来的作用原理之间在物理方面是否相容，
+以期达到不受干扰之累的能量流、物料流和（或）信号流，以及识别几何关系上是否不发生冲突。
+还有一个问题，是从理论上可能的组合场中选出技术上和经济上良好的组合。</p>
+<div class="section" id="id18">
+<h3>有系统的组合<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h3>
+<p>用这种表式来拟定总解，需要为每个分功能选出一个作用原理，并且按功能结构中的次序把它们依次结合成总解。</p>
+<p>这一方法的主要问题，是要决断出哪些作用原理是彼此相容并且不会冲突的，亦即真正可以组合起来的。</p>
+</div>
+<div class="section" id="id19">
+<h3>依靠数学方法的组合<a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h3>
+<p>依靠数学方法由分解组合成总解时，必须知道分解的一些特征标志和性质，它们应与要连结的相邻解的相应性质相一致。</p>
+</div>
+</div>
+<div class="section" id="id20">
+<h2>挑选合适的变型<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h2>
+<p>依靠一个有规则又可检验的选择过程，可便于从众多解的建议中做出选择。这样一种选择过程由淘汰和优选这两项工作来标志：</p>
+<p>首先淘汰那些绝对不合适者。剩留下来的可能解如果仍太多，则优选那些显然较好者。</p>
+</div>
+<div class="section" id="id21">
+<h2>具体化为原理解的变型<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="id22">
+<h2>方案变型的评价<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h2>
+<p>对已具体化为原理解变型的解决建议进行评判，以获得客观的决断基础。</p>
+<div class="section" id="id23">
+<h3>基础<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h3>
+<p>评价是要查明一个解关于预定目标的”价值“及”效用“或”优度“。</p>
+<ol class="arabic simple">
+<li><strong>弄清评价准则</strong></li>
+</ol>
+<blockquote>
+<div><p>评价的第一步是建立设定目标，由此可导出评价准则，并可按之评判解的变型。</p>
+<p>对于技术任务，这些目标首先可从要求表的要求，以及从常常要与制定的解联系起来方可知道的一般条件而得到。</p>
+<p>建立目标时，必须尽可能彻底满足下列前提条件：</p>
+<ul class="simple">
+<li>目标中应当尽可能完备地包括对决断有重大关系的要求和一般条件，以免在评价时忽略重要依据。</li>
+<li>进行评价时所依据的各个目标，必须彻底相互独立。</li>
+<li>在获取信息时所需费用不超过容许范围的条件下，需评价的系统关于各个目标的特性应尽可能定量地具体表达，至少也要定性地（用文字）具体表达。</li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><strong>研究对于总价值的重要性</strong></li>
+</ol>
+<blockquote>
+<div>建立评价准则时，必须弄清楚他们对于一个解的总价值的重要性（权值），
+从而必要时可在真正评价以前就去掉不重要的评价准则。</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><strong>特性值的汇编</strong></li>
+</ol>
+<blockquote>
+<div>建立了评价准则并确定了它们的重要性后，在下一个工作步骤中，
+需要对需评价的解的变型补列上已知的或通过分析得出的特性值。</div></blockquote>
+<ol class="arabic simple" start="4">
+<li><strong>按价值观念评价</strong></li>
+</ol>
+<blockquote>
+<div><p>通过引入评价者的价值观念，来从已经定出的特征值得出”价值“。</p>
+<p>对于价值确定法必须明确：不论是建立价值函数还是建立评分表式，都可能强烈地受到主观影响。</p>
+</div></blockquote>
+<ol class="arabic simple" start="5">
+<li><strong>确定总价值</strong></li>
+</ol>
+<blockquote>
+<div>将各个分价值总加起来以评价技术产品。</div></blockquote>
+<ol class="arabic simple" start="6">
+<li><strong>比较解的变型</strong></li>
+</ol>
+<blockquote>
+<div><p>以加法规则为基础，对变型的评价可能做法：</p>
+<p>确定最大总价值：用这个方法时，将总价值最大的那个变型判为最佳。</p>
+<p>确定一个价值比：将总价值与一个想象的，由最大可能的价值得出的理想价值相比。</p>
+<p>粗略比较解的变型</p>
+</div></blockquote>
+<ol class="arabic simple" start="7">
+<li><strong>对评价不可靠性的估计</strong></li>
+</ol>
+<blockquote>
+<div>上面建议的评价方法所可能有的误差或不可靠性可分成两个主要类别，
+即：由人引起的评分误差和方法本身带来的原理性缺陷。</div></blockquote>
+<ol class="arabic simple" start="8">
+<li><strong>寻找弱点</strong></li>
+</ol>
+<blockquote>
+<div>从关于某个评价准则的价值低于平均水平，即可看出弱点来。</div></blockquote>
+</div>
+<div class="section" id="id24">
+<h3>评价法的比较<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="id25">
+<h3>方案设计阶段的评价实践<a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h3>
+<p>在方案设计阶段中，单个分步骤应如下安排：</p>
+<blockquote>
+<div><p>弄清楚评价准则</p>
+<p>评价准则系从下列因素获得：</p>
+<ol class="loweralpha simple">
+<li>要求表的要求</li>
+<li>一般的技术和经济特性</li>
+</ol>
+<p>对于总价值的重要性（加权）</p>
+<p>特性值的汇编</p>
+<p>按价值观念评价</p>
+<p>确定总价值</p>
+<p>比较解的变型</p>
+<p>估计评判的不可靠性</p>
+<p>寻找弱点</p>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="id26">
+<h2>方案设计例子<a class="headerlink" href="#id26" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">第5章 方案设计</a><ul>
+<li><a class="reference internal" href="#id2">方案设计的工作步骤</a></li>
+<li><a class="reference internal" href="#id3">抽象化以认清本质</a><ul>
+<li><a class="reference internal" href="#id4">抽象的目的</a></li>
+<li><a class="reference internal" href="#id5">抽象化和课题表述</a></li>
+<li><a class="reference internal" href="#id6">有系统地扩展课题表述</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id7">建立功能结构</a><ul>
+<li><a class="reference internal" href="#id8">总功能</a></li>
+<li><a class="reference internal" href="#id9">分解为分功能</a></li>
+<li><a class="reference internal" href="#id10">逻辑关系考察</a></li>
+<li><a class="reference internal" href="#id11">物理关系考察</a></li>
+<li><a class="reference internal" href="#id12">功能结构实践</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id13">寻求作用原理</a><ul>
+<li><a class="reference internal" href="#id14">传统的辅助手段</a></li>
+<li><a class="reference internal" href="#id15">偏重于直觉的方法</a></li>
+<li><a class="reference internal" href="#id16">偏重逻辑思维的方法</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id17">作用原理的组合</a><ul>
+<li><a class="reference internal" href="#id18">有系统的组合</a></li>
+<li><a class="reference internal" href="#id19">依靠数学方法的组合</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id20">挑选合适的变型</a></li>
+<li><a class="reference internal" href="#id21">具体化为原理解的变型</a></li>
+<li><a class="reference internal" href="#id22">方案变型的评价</a><ul>
+<li><a class="reference internal" href="#id23">基础</a></li>
+<li><a class="reference internal" href="#id24">评价法的比较</a></li>
+<li><a class="reference internal" href="#id25">方案设计阶段的评价实践</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id26">方案设计例子</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="unit4.html"
+                        title="previous chapter">第4章 制定产品计划和阐明任务</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="unit6.html"
+                        title="next chapter">第6章 技术设计</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/unit5.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="unit6.html" title="第6章 技术设计"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="unit4.html" title="第4章 制定产品计划和阐明任务"
+             >previous</a> |</li>
+        <li><a href="index.html">Engineering Design Methodology 1.0(beta) documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2013, ConanXin.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.
+    </div>
+  </body>
+</html>

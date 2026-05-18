@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>工程设计方法论：从任务书到 CAD 的系统化设计流程</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1>工程设计方法论</h1>
+      <p>从任务书到 CAD 的系统化设计流程 —— 工程设计学学习与实践手册现代化版本</p>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- 十章内容地图 -->
+    <section class="section">
+      <h2>十章内容地图</h2>
+      <div class="card-grid" id="chapters">
+        <!-- 由 JS 动态渲染或静态卡片 -->
+        <div class="card"><strong>Unit 1</strong><br>引言</div>
+        <div class="card"><strong>Unit 2</strong><br>基础</div>
+        <div class="card"><strong>Unit 3</strong><br>设计过程</div>
+        <div class="card"><strong>Unit 4</strong><br>制定产品计划和阐明任务</div>
+        <div class="card"><strong>Unit 5</strong><br>方案设计</div>
+        <div class="card"><strong>Unit 6</strong><br>技术设计</div>
+        <div class="card"><strong>Unit 7</strong><br>系列产品和组合产品的开发</div>
+        <div class="card"><strong>Unit 8</strong><br>施工设计</div>
+        <div class="card"><strong>Unit 9</strong><br>成本估算</div>
+        <div class="card"><strong>Unit 10</strong><br>计算机辅助设计</div>
+      </div>
+    </section>
+
+    <!-- 核心设计流程 -->
+    <section class="section">
+      <h2>核心设计流程</h2>
+      <div class="flow-step" data-explanation="明确产品目标、约束与成功标准，是后续所有设计活动的出发点。">
+        <strong>1. 产品计划与任务书</strong>
+      </div>
+      <div class="flow-step" data-explanation="把模糊需求转化为清晰、可验证的功能要求与性能指标。">
+        <strong>2. 任务书澄清</strong>
+      </div>
+      <div class="flow-step" data-explanation="探索多种可能的解决方案，形成方案矩阵并进行初步评价。">
+        <strong>3. 方案设计</strong>
+      </div>
+      <div class="flow-step" data-explanation="将选定方案细化为具体技术参数、材料、结构与制造工艺。">
+        <strong>4. 技术设计</strong>
+      </div>
+      <div class="flow-step" data-explanation="完成详细施工图、工艺文件与生产准备。">
+        <strong>5. 施工设计</strong>
+      </div>
+      <div class="flow-step" data-explanation="估算材料、加工、装配等全生命周期成本。">
+        <strong>6. 成本估算</strong>
+      </div>
+      <div class="flow-step" data-explanation="利用 CAD/CAE 工具实现参数化建模、仿真与优化。">
+        <strong>7. CAD / 软件辅助设计</strong>
+      </div>
+      <div id="flow-explanation" style="display:none; margin-top:20px; padding:20px; background:#fff; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);"></div>
+    </section>
+
+    <!-- 可复用模板 -->
+    <section class="section">
+      <h2>可复用模板</h2>
+      <div class="card-grid">
+        <div class="card">任务书澄清模板</div>
+        <div class="card">功能分解模板</div>
+        <div class="card">方案评价矩阵</div>
+        <div class="card">技术设计检查清单</div>
+        <div class="card">成本估算模板</div>
+      </div>
+    </section>
+
+    <!-- Agent 工作流入口 -->
+    <section class="section">
+      <h2>Agent 工作流入口</h2>
+      <p>本方法论可进一步结构化为 Hermes Agent / OpenClaw skill，支持自动生成任务书、方案矩阵、检查报告等可执行输出。</p>
+      <p>后续阶段将提供 workflows.json 与 skill 模板对接。</p>
+    </section>
+
+    <!-- 当前状态 -->
+    <section class="section">
+      <h2>当前状态</h2>
+      <span class="status">Phase 1A — 本地原型骨架（未发布）</span>
+      <p>本阶段仅构建目录结构、数据骨架与静态页面原型。原始 rst 文件完整保留在 source_archive/。</p>
+    </section>
+  </div>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

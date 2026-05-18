@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "source_file": "unit1.rst",
+    "title": "引言",
+    "role": "项目背景与方法论概述",
+    "modernization_target": "导航与核心价值提炼"
+  },
+  {
+    "id": 2,
+    "source_file": "unit2.rst",
+    "title": "基础",
+    "role": "工程设计基本概念与原则",
+    "modernization_target": "概念卡片化"
+  },
+  {
+    "id": 3,
+    "source_file": "unit3.rst",
+    "title": "设计过程",
+    "role": "通用设计流程框架",
+    "modernization_target": "流程可视化"
+  },
+  {
+    "id": 4,
+    "source_file": "unit4.rst",
+    "title": "制定产品计划和阐明任务",
+    "role": "任务书澄清核心阶段",
+    "modernization_target": "检查清单与模板"
+  },
+  {
+    "id": 5,
+    "source_file": "unit5.rst",
+    "title": "方案设计",
+    "role": "多方案生成与评价",
+    "modernization_target": "方案矩阵与评价工具"
+  },
+  {
+    "id": 6,
+    "source_file": "unit6.rst",
+    "title": "技术设计",
+    "role": "详细技术参数定义",
+    "modernization_target": "技术设计检查清单"
+  },
+  {
+    "id": 7,
+    "source_file": "unit7.rst",
+    "title": "系列产品和组合产品的开发",
+    "role": "产品族与模块化设计",
+    "modernization_target": "系列化策略总结"
+  },
+  {
+    "id": 8,
+    "source_file": "unit8.rst",
+    "title": "施工设计",
+    "role": "生产准备与文件输出",
+    "modernization_target": "施工文件检查清单"
+  },
+  {
+    "id": 9,
+    "source_file": "unit9.rst",
+    "title": "成本估算",
+    "role": "全生命周期成本分析",
+    "modernization_target": "成本模型与模板"
+  },
+  {
+    "id": 10,
+    "source_file": "unit10.rst",
+    "title": "计算机辅助设计",
+    "role": "CAD/CAE 工具应用",
+    "modernization_target": "工具链与工作流集成"
+  }
+]

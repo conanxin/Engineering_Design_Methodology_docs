@@ -1,0 +1,14 @@
+[
+  {"id": "task-spec", "name": "任务书", "definition": "产品设计任务的正式书面说明，包含目标、约束、性能要求等。"},
+  {"id": "must-requirements", "name": "必达要求", "definition": "设计必须满足的硬性条件，否则方案无效。"},
+  {"id": "wishes", "name": "愿望", "definition": "希望达到但非强制的优化目标。"},
+  {"id": "main-function", "name": "总功能", "definition": "产品需实现的最高层功能。"},
+  {"id": "sub-functions", "name": "分功能", "definition": "总功能分解后的子功能模块。"},
+  {"id": "function-structure", "name": "功能结构", "definition": "功能之间的逻辑与物理关系图。"},
+  {"id": "working-principle", "name": "作用原理", "definition": "实现功能所依据的物理、化学或机械原理。"},
+  {"id": "technical-design", "name": "技术设计", "definition": "将方案细化为可制造的具体技术参数与结构。"},
+  {"id": "construction-design", "name": "施工设计", "definition": "输出详细施工图、工艺文件与生产指导。"},
+  {"id": "value-analysis", "name": "价值分析", "definition": "以功能为核心的成本-效益优化方法。"},
+  {"id": "cost-estimation", "name": "成本估算", "definition": "全生命周期成本预测与控制。"},
+  {"id": "cad-integration", "name": "CAD集成", "definition": "参数化建模、仿真与数字化孪生。"}
+]

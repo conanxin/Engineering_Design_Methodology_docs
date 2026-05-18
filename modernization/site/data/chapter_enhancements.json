@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "title": "引言",
+    "diagram_title": "工程设计思维 vs 普通画图思维",
+    "diagram_steps": ["约束识别", "问题抽象", "方案生成", "验证迭代"],
+    "comparison_table": "普通画图思维 | 工程设计思维\n直接画图 | 先澄清任务书\n忽略约束 | 明确必达要求\n单方案 | 多方案矩阵",
+    "mini_case": "用户说“想做一个读书笔记网站”。通过任务书澄清，把模糊想法变成“支持 PDF 导入、AI 摘要、语义搜索、本地优先”的设计任务。",
+    "reusable_prompt": "请把以下想法转成工程设计任务书：\n{用户想法}\n输出必达要求、愿望、约束条件。",
+    "next_action": "进入 Unit 2 学习技术系统建模"
+  },
+  {
+    "id": 2,
+    "title": "基础",
+    "diagram_title": "技术系统输入 / 转换 / 输出",
+    "diagram_steps": ["输入（能量/物料/信号）", "转换过程", "输出", "反馈"],
+    "comparison_table": "能量 | 物料 | 信号\n电力 | 零件 | 数据\n热量 | 材料 | 指令",
+    "mini_case": "AI 读书笔记网站：输入 PDF/EPUB，转换 AI 摘要，输出知识图谱和搜索结果。",
+    "reusable_prompt": "请把以下项目建模为技术系统：\n{项目描述}\n输出输入、转换、输出。",
+    "next_action": "进入 Unit 3 学习设计过程"
+  },
+  {
+    "id": 3,
+    "title": "设计过程",
+    "diagram_title": "四阶段工程设计流程",
+    "diagram_steps": ["任务书", "方案设计", "技术设计", "施工设计"],
+    "comparison_table": "阶段 | 输入 | 输出 | 判断标准\n任务书 | 想法 | 要求表 | 清晰可验证\n方案设计 | 要求表 | 方案矩阵 | 满足必达\n技术设计 | 方案 | 结构参数 | 可制造\n施工设计 | 结构参数 | 交付文件 | 可生产",
+    "mini_case": "GitHub Pages 项目从想法到上线的阶段拆解：任务书 → 方案矩阵 → 技术参数 → 发布包。",
+    "reusable_prompt": "请把以下项目拆成工程设计四个阶段：\n{项目}",
+    "next_action": "进入 Unit 4 学习任务澄清"
+  },
+  {
+    "id": 4,
+    "title": "制定产品计划和阐明任务",
+    "diagram_title": "从机会到任务书",
+    "diagram_steps": ["机会发现", "形势分析", "任务书", "要求表"],
+    "comparison_table": "必达要求 | 愿望\n处理量 ≥ 8000 件/小时 | 支持 AI 预测维护\n安全符合 GB 标准 | 能耗降低 20%",
+    "mini_case": "自动供包处理中心方案：明确处理量 8000 件/小时作为必达要求，AI 预测维护作为愿望。",
+    "reusable_prompt": "请区分以下需求的必达要求和愿望：\n{需求列表}",
+    "next_action": "进入 Unit 5 学习方案设计"
+  },
+  {
+    "id": 5,
+    "title": "方案设计",
+    "diagram_title": "从抽象到方案矩阵",
+    "diagram_steps": ["抽象化", "功能分解", "作用原理", "方案矩阵"],
+    "comparison_table": "方案 | 技术 | 成本 | 风险 | 总分\nA | 9 | 7 | 8 | 24\nB | 8 | 8 | 7 | 23",
+    "mini_case": "本地 Agent 工具链：生成 RAG、本地 LLM、静态生成三个方案并评价。",
+    "reusable_prompt": "请为以下功能生成 3 个方案并构建评价矩阵：\n{功能}",
+    "next_action": "进入 Unit 6 学习技术设计"
+  },
+  {
+    "id": 6,
+    "title": "技术设计",
+    "diagram_title": "从原理到结构确定",
+    "diagram_steps": ["原理解", "结构确定", "明确/简单/安全检查"],
+    "comparison_table": "检查项 | 问题\n明确 | 参数是否清晰\n简单 | 是否可简化\n安全 | 是否有安全隐患",
+    "mini_case": "网页项目技术设计：材料（框架）、强度（性能）、工艺（部署）、安全（权限）。",
+    "reusable_prompt": "请对以下方案做技术设计审查：\n{方案}",
+    "next_action": "进入 Unit 7 学习系列产品"
+  },
+  {
+    "id": 7,
+    "title": "系列产品和组合产品",
+    "diagram_title": "从基础模块到产品变体",
+    "diagram_steps": ["基础模块", "组合模块", "产品变体"],
+    "comparison_table": "系列化 | 模块化 | 一次性定制\n共享平台 | 标准接口 | 定制开发",
+    "mini_case": "交互专题页抽象成模块库：导航、卡片、搜索、流程图可复用。",
+    "reusable_prompt": "请把以下项目拆成可复用模块：\n{项目}",
+    "next_action": "进入 Unit 8 学习施工设计"
+  },
+  {
+    "id": 8,
+    "title": "施工设计",
+    "diagram_title": "从总图到交付文件",
+    "diagram_steps": ["总图", "部件图", "零件表", "编号系统"],
+    "comparison_table": "工程文件 | 软件项目文件\n施工图 | 组件结构\n零件表 | package.json\n工艺文件 | 部署脚本",
+    "mini_case": "GitHub Pages 发布包：index.html、assets、data、chapters 作为交付文件清单。",
+    "reusable_prompt": "请生成以下项目的交付文件清单：\n{项目}",
+    "next_action": "进入 Unit 9 学习成本估算"
+  },
+  {
+    "id": 9,
+    "title": "成本估算",
+    "diagram_title": "早期决策对后期成本的影响",
+    "diagram_steps": ["技术成本", "维护成本", "时间成本", "风险成本"],
+    "comparison_table": "方案 | 技术成本 | 维护成本 | 时间成本\nA | 高 | 低 | 中\nB | 中 | 中 | 低",
+    "mini_case": "三种网站实现方案成本比较：全栈、静态生成、Agent 辅助。",
+    "reusable_prompt": "请对以下 3 个方案做成本估算：\n{方案列表}",
+    "next_action": "进入 Unit 10 学习计算机辅助设计"
+  },
+  {
+    "id": 10,
+    "title": "计算机辅助设计",
+    "diagram_title": "从 CAD 到 Agent 辅助设计",
+    "diagram_steps": ["传统 CAD", "数据系统", "AI Agent 辅助"],
+    "comparison_table": "传统 CAD | 静态网站 | Agent 工作流\n手动建模 | 手动维护 | 自动生成",
+    "mini_case": "Hermes skill 接入工程设计方法论：把任务书、方案矩阵、检查清单作为 skill 输入。",
+    "reusable_prompt": "请把以下设计流程转成 Agent 工作流：\n{流程}",
+    "next_action": "开始实际项目实践"
+  }
+]

@@ -12,32 +12,45 @@
     <h1>Unit 1 · 引言</h1>
     
     <h2>本章解决什么问题</h2>
-    <p>工程设计不是单纯的“画图”或“做模型”，而是在多重约束下进行创造性问题求解的系统性活动。本章明确了工程设计的本质、边界与核心价值。</p>
+    <p>工程设计不是单纯的“画图”，而是在多重约束下进行创造性问题求解的系统性活动。</p>
 
-    <h2>核心概念</h2>
-    <ul>
-      <li><strong>工程设计</strong>：在给定约束下寻找满足功能需求的最优解</li>
-      <li><strong>创造性问题求解</strong>：不是复制已有方案，而是生成新方案</li>
-      <li><strong>约束</strong>：成本、时间、法规、技术可行性等限制条件</li>
-    </ul>
+    <h2>章节图解：工程设计思维</h2>
+    <div class="method-flow">
+      <div class="method-step">约束识别</div>
+      <div class="method-step">问题抽象</div>
+      <div class="method-step">方案生成</div>
+      <div class="method-step">验证迭代</div>
+    </div>
 
-    <h2>方法论转译</h2>
-    <p>现代产品开发中，设计不再是下游的执行环节，而是从需求定义开始就介入的战略活动。设计者需要同时思考“做什么”和“怎么做”。</p>
+    <h2>普通画图思维 vs 工程设计思维</h2>
+    <table class="comparison-table">
+      <tr><th>普通画图思维</th><th>工程设计思维</th></tr>
+      <tr><td>直接画图</td><td>先澄清任务书</td></tr>
+      <tr><td>忽略约束</td><td>明确必达要求</td></tr>
+      <tr><td>单方案</td><td>多方案矩阵</td></tr>
+    </table>
 
-    <h2>适合转成的模板 / 工作流</h2>
-    <ul>
-      <li>设计任务定义模板</li>
-      <li>约束清单生成器</li>
-    </ul>
+    <h2>迷你案例</h2>
+    <div class="mini-case">
+      用户说“想做一个读书笔记网站”。通过任务书澄清，把模糊想法变成“支持 PDF 导入、AI 摘要、语义搜索、本地优先”的设计任务。
+    </div>
 
-    <h2>与现代 AI / CAD / 产品设计的对应关系</h2>
-    <p>当前 AI Agent 可以辅助完成需求解析、约束提取、方案 brainstorm。CAD 工具则负责将抽象方案快速可视化。</p>
+    <h2>可复制 Prompt</h2>
+    <div class="prompt-card">
+      <pre id="prompt-unit1">请把以下想法转成工程设计任务书：
+{用户想法}
+输出必达要求、愿望、约束条件。</pre>
+      <button class="copy-template" data-copy-target="prompt-unit1">复制 Prompt</button>
+    </div>
 
-    <h2>后续整理建议</h2>
-    <p>可进一步拆分为“设计思维”与“工程约束”两个子主题，便于与现代设计方法论对接。</p>
+    <div class="chapter-pager">
+      <a href="unit10.html">上一章</a>
+      <a href="../index.html">返回首页</a>
+      <a href="unit2.html">下一章</a>
+    </div>
 
     <hr>
-    <p><em>Phase 1B 原型页面：基于旧工程设计方法学笔记进行结构化整理，非正式出版版本。</em></p>
+    <p><em>Phase 2B 深化章节页面：本页加入图解、表格、案例和可复制 Prompt。</em></p>
   </div>
   <script src="../assets/js/app.js"></script>
 </body>

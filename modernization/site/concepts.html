@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>工程设计方法论概念索引</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <p><a href="index.html">← 返回首页</a></p>
+    <h1>工程设计方法论概念索引</h1>
+    
+    <input type="text" id="concept-search" placeholder="搜索概念..." style="width:100%; padding:12px; margin-bottom:20px;">
+    
+    <div id="concepts-grid" class="card-grid"></div>
+
+    <hr>
+    <p><em>Phase 2A 概念索引页面。</em></p>
+  </div>
+  <script src="assets/js/app.js"></script>
+  <script>
+    // Simple concept loader for standalone page
+    if (typeof loadConcepts === 'function') {
+      loadConcepts();
+    }
+  </script>
+</body>
+</html>

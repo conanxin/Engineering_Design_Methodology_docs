@@ -16,13 +16,37 @@ body {
 .hero {
   background: linear-gradient(135deg, #2c3e50, #3498db);
   color: white;
-  padding: 80px 20px;
+  padding: 100px 20px;
   text-align: center;
 }
 
 .hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-buttons {
+  margin-top: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  margin: 8px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn.primary {
+  background: white;
+  color: #2c3e50;
+}
+
+.btn {
+  background: rgba(255,255,255,0.2);
+  color: white;
+  border: 1px solid white;
 }
 
 .section {
@@ -31,66 +55,61 @@ body {
 
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
   margin-top: 30px;
 }
 
 .card {
   background: white;
   border-radius: 12px;
-  padding: 24px;
+  padding: 28px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-  transition: transform 0.2s ease;
+  transition: transform 0.2s;
   text-decoration: none;
   color: inherit;
 }
 
 .card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  transform: translateY(-6px);
+}
+
+.flow-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
 }
 
 .flow-step {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  padding: 16px;
+  background: #e3f2fd;
+  padding: 12px 24px;
+  border-radius: 9999px;
+  font-weight: 600;
+  color: #1565c0;
+}
+
+.search-results {
+  margin-top: 20px;
   background: white;
   border-radius: 8px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  border-left: 5px solid #3498db;
-}
-
-.flow-step:hover {
-  background: #f0f4f8;
-}
-
-.status {
-  background: #e8f5e9;
-  color: #2e7d32;
-  padding: 8px 16px;
-  border-radius: 20px;
-  display: inline-block;
-  font-size: 0.9rem;
-}
-
-.copy-command {
-  cursor: pointer;
-  color: #1976d2;
-}
-
-pre {
-  background: #f5f5f5;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   padding: 12px;
+}
+
+.copy-template {
+  margin-top: 12px;
+  padding: 8px 16px;
+  background: #1976d2;
+  color: white;
+  border: none;
   border-radius: 6px;
-  overflow-x: auto;
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {
   .hero h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
   .card-grid {
     grid-template-columns: 1fr;

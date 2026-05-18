@@ -3,64 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>工程设计方法论：从任务书到 CAD 的系统化设计流程</title>
+  <title>工程设计方法论：把模糊想法变成可执行方案</title>
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
   <header class="hero">
     <div class="container">
       <h1>工程设计方法论</h1>
-      <p>从任务书到 CAD 的系统化设计流程 —— 工程设计学学习与实践手册现代化版本</p>
+      <p>把模糊想法变成可执行方案 —— 从任务书澄清到成本估算的系统化方法论，也可转化为 Hermes / OpenClaw Agent 工作流。</p>
+      
+      <div class="hero-buttons">
+        <a href="guide.html" class="btn primary">开始阅读方法论</a>
+        <a href="cases/index.html" class="btn">查看案例</a>
+        <a href="agent-workflows.html" class="btn">复制 Agent 工作流</a>
+      </div>
     </div>
   </header>
 
   <div class="container">
+    <!-- 总流程图 -->
+    <section class="section">
+      <h2>核心方法论流程</h2>
+      <div class="flow-container">
+        <div class="flow-step">想法</div>
+        <div class="flow-step">任务书</div>
+        <div class="flow-step">功能结构</div>
+        <div class="flow-step">方案矩阵</div>
+        <div class="flow-step">技术设计</div>
+        <div class="flow-step">施工文件</div>
+        <div class="flow-step">Agent 执行</div>
+      </div>
+    </section>
+
+    <!-- 阅读路径 -->
+    <section class="section">
+      <h2>推荐阅读路径</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>我是初学者</h3>
+          <p>引言 → 基础 → 设计过程 → 方案设计</p>
+          <a href="chapters/unit1.html">开始阅读</a>
+        </div>
+        <div class="card">
+          <h3>我要做项目</h3>
+          <p>任务澄清 → 方案设计 → 技术设计 → 成本估算</p>
+          <a href="cases/index.html">查看案例</a>
+        </div>
+        <div class="card">
+          <h3>我要训练 Agent</h3>
+          <p>Agent 工作流 → 模板库 → 案例库 → skill 草案</p>
+          <a href="agent-workflows.html">进入工作流</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 搜索入口 -->
+    <section class="section">
+      <h2>快速搜索</h2>
+      <input type="text" id="global-search" placeholder="搜索：任务书 / 功能结构 / 方案评价 / 成本估算 / Agent" style="width:100%; padding:12px; font-size:1.1rem;">
+      <div id="search-results" class="search-results"></div>
+    </section>
+
     <!-- 十章内容地图 -->
     <section class="section">
       <h2>十章内容地图</h2>
-      <div class="card-grid" id="chapters">
-        <a href="chapters/unit1.html" class="card"><strong>Unit 1</strong><br>引言</a>
-        <a href="chapters/unit2.html" class="card"><strong>Unit 2</strong><br>基础</a>
-        <a href="chapters/unit3.html" class="card"><strong>Unit 3</strong><br>设计过程</a>
-        <a href="chapters/unit4.html" class="card"><strong>Unit 4</strong><br>制定产品计划和阐明任务</a>
-        <a href="chapters/unit5.html" class="card"><strong>Unit 5</strong><br>方案设计</a>
-        <a href="chapters/unit6.html" class="card"><strong>Unit 6</strong><br>技术设计</a>
-        <a href="chapters/unit7.html" class="card"><strong>Unit 7</strong><br>系列产品和组合产品的开发</a>
-        <a href="chapters/unit8.html" class="card"><strong>Unit 8</strong><br>施工设计</a>
-        <a href="chapters/unit9.html" class="card"><strong>Unit 9</strong><br>成本估算</a>
-        <a href="chapters/unit10.html" class="card"><strong>Unit 10</strong><br>计算机辅助设计</a>
+      <div class="card-grid" id="chapters-grid">
+        <!-- JS 动态渲染 -->
       </div>
     </section>
 
-    <!-- 新增入口 -->
+    <!-- 工具入口 -->
     <section class="section">
-      <h2>扩展资源</h2>
+      <h2>工具入口</h2>
       <div class="card-grid">
-        <a href="cases/index.html" class="card"><strong>案例库</strong><br>5 个原创工程设计案例</a>
-        <a href="diagrams.html" class="card"><strong>方法论图解</strong><br>SVG 流程与矩阵</a>
-        <a href="agent-workflows.html" class="card"><strong>Agent 工作流</strong><br>可直接给 Hermes 的命令示例</a>
+        <a href="guide.html" class="card"><strong>使用指南</strong><br>如何高效使用这套方法论</a>
+        <a href="templates.html" class="card"><strong>模板库</strong><br>5 个可直接复制的 Markdown 模板</a>
+        <a href="concepts.html" class="card"><strong>概念索引</strong><br>22 个核心概念与 Agent prompt</a>
       </div>
-      <p style="margin-top:12px; font-size:0.9rem; color:#666;">Hermes skill 草案位于 仓库 modernization 目录下的 skill 草案子目录（仅供参考）</p>
-    </section>
-
-    <!-- 方法论总流程 -->
-    <section class="section">
-      <h2>方法论总流程</h2>
-      <div class="flow-step" data-explanation="明确产品目标、约束与成功标准，是后续所有设计活动的出发点。"><strong>1. 产品计划与任务书</strong></div>
-      <div class="flow-step" data-explanation="把模糊需求转化为清晰、可验证的功能要求与性能指标。"><strong>2. 任务书澄清</strong></div>
-      <div class="flow-step" data-explanation="探索多种可能的解决方案，形成方案矩阵并进行初步评价。"><strong>3. 方案设计</strong></div>
-      <div class="flow-step" data-explanation="将选定方案细化为具体技术参数、材料、结构与制造工艺。"><strong>4. 技术设计</strong></div>
-      <div class="flow-step" data-explanation="完成详细施工图、工艺文件与生产准备。"><strong>5. 施工设计</strong></div>
-      <div class="flow-step" data-explanation="估算材料、加工、装配等全生命周期成本。"><strong>6. 成本估算</strong></div>
-      <div class="flow-step" data-explanation="利用 CAD/CAE 工具实现参数化建模、仿真与优化。"><strong>7. CAD / 软件辅助设计</strong></div>
-      <div id="flow-explanation" style="display:none; margin-top:20px; padding:20px; background:#fff; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);"></div>
     </section>
 
     <!-- 当前状态 -->
     <section class="section">
       <h2>当前状态</h2>
-      <span class="status">Phase 1C：章节 + 案例 + 图解 + Agent 工作流原型（本地未发布）</span>
-      <p>已生成 10 个章节页面、5 个案例、4 个 SVG 图解、Agent 工作流与 skill 草案。原始 rst 文件保留在仓库 modernization 目录下的 source_archive 子目录。</p>
+      <span class="status">Phase 2A：产品化首页 + 使用指南 + 模板库 + 概念索引（本地增强版本）</span>
     </section>
   </div>
 

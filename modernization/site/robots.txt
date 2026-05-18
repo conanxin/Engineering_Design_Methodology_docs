@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://conanxin.github.io/Engineering_Design_Methodology_docs/sitemap.xml

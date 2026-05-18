@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-  // Flow step explanations (homepage)
+  // Flow step explanations
   const flowSteps = document.querySelectorAll('.flow-step');
   const explanationBox = document.getElementById('flow-explanation');
 
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // Chapter card accessibility enhancement
+  // Chapter card accessibility
   const chapterCards = document.querySelectorAll('.card-grid .card');
   chapterCards.forEach(card => {
     card.setAttribute('tabindex', '0');
@@ -22,6 +22,26 @@ document.addEventListener('DOMContentLoaded', function() {
       if (e.key === 'Enter') {
         const link = card.getAttribute('href');
         if (link) window.location.href = link;
+      }
+    });
+  });
+
+  // Copy command buttons (graceful degradation)
+  const copyButtons = document.querySelectorAll('.copy-command');
+  copyButtons.forEach(btn => {
+    btn.addEventListener('click', async function() {
+      const text = btn.dataset.command || btn.textContent;
+      try {
+        await navigator.clipboard.writeText(text);
+        const original = btn.textContent;
+        btn.textContent = '已复制';
+        setTimeout(() => { btn.textContent = original; }, 1500);
+      } catch (e) {
+        // Fallback: select text
+        const range = document.createRange();
+        range.selectNodeContents(btn);
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
       }
     });
   });

@@ -76,10 +76,16 @@ body {
   font-size: 0.9rem;
 }
 
-.chapter-nav {
-  margin: 20px 0;
-  padding: 12px 0;
-  border-bottom: 1px solid #eee;
+.copy-command {
+  cursor: pointer;
+  color: #1976d2;
+}
+
+pre {
+  background: #f5f5f5;
+  padding: 12px;
+  border-radius: 6px;
+  overflow-x: auto;
 }
 
 @media (max-width: 768px) {

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="180" viewBox="0 0 700 180">
+  <title>功能分解流程</title>
+  <desc>总功能 → 分功能 → 作用原理 → 方案组合</desc>
+  <rect x="50" y="20" width="140" height="50" rx="8" fill="#fff3e0" stroke="#f57c00"/>
+  <text x="120" y="50" font-size="13" text-anchor="middle">总功能</text>
+  
+  <rect x="230" y="20" width="140" height="50" rx="8" fill="#fff3e0" stroke="#f57c00"/>
+  <text x="300" y="50" font-size="13" text-anchor="middle">分功能</text>
+  
+  <rect x="410" y="20" width="140" height="50" rx="8" fill="#fff3e0" stroke="#f57c00"/>
+  <text x="480" y="50" font-size="13" text-anchor="middle">作用原理</text>
+  
+  <rect x="590" y="20" width="100" height="50" rx="8" fill="#fff3e0" stroke="#f57c00"/>
+  <text x="640" y="50" font-size="13" text-anchor="middle">方案组合</text>
+  
+  <path d="M190 45 L230 45" stroke="#f57c00" stroke-width="2"/>
+  <path d="M370 45 L410 45" stroke="#f57c00" stroke-width="2"/>
+  <path d="M550 45 L590 45" stroke="#f57c00" stroke-width="2"/>
+  
+  <text x="120" y="110" font-size="11" text-anchor="middle">输入/输出定义</text>
+  <text x="300" y="110" font-size="11" text-anchor="middle">功能结构图</text>
+  <text x="480" y="110" font-size="11" text-anchor="middle">原理搜索</text>
+  <text x="640" y="110" font-size="11" text-anchor="middle">评价矩阵</text>
+</svg>

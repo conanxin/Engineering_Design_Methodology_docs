@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "source_file": "unit1.rst",
+    "title": "引言",
+    "role": "项目背景与方法论概述",
+    "modernization_target": "导航与核心价值提炼",
+    "summary": "工程设计是在约束下进行创造性问题求解的系统活动。",
+    "key_concepts": ["工程设计", "约束", "创造性求解"],
+    "page_url": "chapters/unit1.html",
+    "agent_use": "需求解析与约束提取",
+    "template_candidates": ["任务定义模板", "约束清单"]
+  },
+  {
+    "id": 2,
+    "source_file": "unit2.rst",
+    "title": "基础",
+    "role": "工程设计基本概念与原则",
+    "modernization_target": "概念卡片化",
+    "summary": "建立系统、输入输出、功能结构等基本语言。",
+    "key_concepts": ["技术系统", "功能结构", "输入输出"],
+    "page_url": "chapters/unit2.html",
+    "agent_use": "系统抽象建模",
+    "template_candidates": ["功能结构模板"]
+  },
+  {
+    "id": 3,
+    "source_file": "unit3.rst",
+    "title": "设计过程",
+    "role": "通用设计流程框架",
+    "modernization_target": "流程可视化",
+    "summary": "从任务书到施工设计的阶段化迭代流程。",
+    "key_concepts": ["设计阶段", "迭代"],
+    "page_url": "chapters/unit3.html",
+    "agent_use": "流程导航与阶段检查",
+    "template_candidates": ["阶段检查清单"]
+  },
+  {
+    "id": 4,
+    "source_file": "unit4.rst",
+    "title": "制定产品计划和阐明任务",
+    "role": "任务书澄清核心阶段",
+    "modernization_target": "检查清单与模板",
+    "summary": "把产品机会转化为清晰的任务书。",
+    "key_concepts": ["任务书", "必达要求", "愿望"],
+    "page_url": "chapters/unit4.html",
+    "agent_use": "任务书生成与澄清",
+    "template_candidates": ["任务书澄清模板"]
+  },
+  {
+    "id": 5,
+    "source_file": "unit5.rst",
+    "title": "方案设计",
+    "role": "多方案生成与评价",
+    "modernization_target": "方案矩阵与评价工具",
+    "summary": "功能分解、作用原理搜索与方案评价。",
+    "key_concepts": ["功能分解", "作用原理", "评价矩阵"],
+    "page_url": "chapters/unit5.html",
+    "agent_use": "方案 brainstorm 与筛选",
+    "template_candidates": ["方案评价矩阵"]
+  },
+  {
+    "id": 6,
+    "source_file": "unit6.rst",
+    "title": "技术设计",
+    "role": "详细技术参数定义",
+    "modernization_target": "技术设计检查清单",
+    "summary": "把方案细化为可制造的结构与工艺。",
+    "key_concepts": ["结构确定", "明确性", "简单性", "安全性"],
+    "page_url": "chapters/unit6.html",
+    "agent_use": "技术参数生成与验证",
+    "template_candidates": ["技术设计检查清单"]
+  },
+  {
+    "id": 7,
+    "source_file": "unit7.rst",
+    "title": "系列产品和组合产品",
+    "role": "产品族与模块化设计",
+    "modernization_target": "系列化策略总结",
+    "summary": "用模块化与标准化开发产品族。",
+    "key_concepts": ["系列化", "模块化", "结构块"],
+    "page_url": "chapters/unit7.html",
+    "agent_use": "产品族规划",
+    "template_candidates": ["产品族规划模板"]
+  },
+  {
+    "id": 8,
+    "source_file": "unit8.rst",
+    "title": "施工设计",
+    "role": "生产准备与文件输出",
+    "modernization_target": "施工文件检查清单",
+    "summary": "输出完整可生产的技术文件系统。",
+    "key_concepts": ["图纸", "零件表", "技术文件"],
+    "page_url": "chapters/unit8.html",
+    "agent_use": "文件完整性检查",
+    "template_candidates": ["施工设计文件检查清单"]
+  },
+  {
+    "id": 9,
+    "source_file": "unit9.rst",
+    "title": "成本估算",
+    "role": "全生命周期成本分析",
+    "modernization_target": "成本模型与模板",
+    "summary": "早期设计决策对成本的影响与价值分析。",
+    "key_concepts": ["价值分析", "成本估算"],
+    "page_url": "chapters/unit9.html",
+    "agent_use": "成本建模",
+    "template_candidates": ["成本估算模板"]
+  },
+  {
+    "id": 10,
+    "source_file": "unit10.rst",
+    "title": "计算机辅助设计",
+    "role": "CAD/CAE 工具应用",
+    "modernization_target": "工具链与工作流集成",
+    "summary": "从传统 CAD 到 AI Agent 辅助设计的演进。",
+    "key_concepts": ["CAD", "AI辅助设计"],
+    "page_url": "chapters/unit10.html",
+    "agent_use": "Agent 工作流集成",
+    "template_candidates": ["AI 设计工作流"]
+  }
+]

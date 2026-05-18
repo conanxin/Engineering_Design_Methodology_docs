@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agent 工作流 — 工程设计方法论</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <p><a href="index.html">← 返回首页</a></p>
+    <h1>Agent 工作流</h1>
+    <p>工程设计方法论可直接映射为 Hermes Agent 的结构化工作流。</p>
+    
+    <div class="card-grid">
+      <div class="card">
+        <h3>从想法到任务书</h3>
+        <p><strong>输入：</strong>原始想法<br>
+        <strong>步骤：</strong>收集需求 → 明确利益相关者 → 撰写初稿 → 多轮澄清<br>
+        <strong>输出：</strong>结构化任务书<br>
+        <strong>失败风险：</strong>需求模糊<br>
+        <strong>人类复核点：</strong>必达要求确认</p>
+      </div>
+      <div class="card">
+        <h3>从任务书到功能结构</h3>
+        <p><strong>输入：</strong>任务书<br>
+        <strong>步骤：</strong>提取总功能 → 分解分功能 → 建立结构 → 定义输入输出<br>
+        <strong>输出：</strong>功能结构图<br>
+        <strong>失败风险：</strong>分解过细或遗漏<br>
+        <strong>人类复核点：</strong>功能完整性</p>
+      </div>
+      <div class="card">
+        <h3>从功能结构到作用原理</h3>
+        <p><strong>输入：</strong>功能结构<br>
+        <strong>步骤：</strong>搜索原理 → 评估可行性 → 生成变型<br>
+        <strong>输出：</strong>原理列表<br>
+        <strong>失败风险：</strong>原理不匹配<br>
+        <strong>人类复核点：</strong>可行性判断</p>
+      </div>
+      <div class="card">
+        <h3>从作用原理到方案矩阵</h3>
+        <p><strong>输入：</strong>原理<br>
+        <strong>步骤：</strong>组合变型 → 建立准则 → 填充矩阵 → 筛选<br>
+        <strong>输出：</strong>推荐方案<br>
+        <strong>失败风险：</strong>评价主观<br>
+        <strong>人类复核点：</strong>最终选择</p>
+      </div>
+      <div class="card">
+        <h3>从方案到技术设计检查</h3>
+        <p><strong>输入：</strong>推荐方案<br>
+        <strong>步骤：</strong>参数计算 → 结构设计 → 工艺规划 → 检查<br>
+        <strong>输出：</strong>技术设计文件<br>
+        <strong>失败风险：</strong>参数不合理<br>
+        <strong>人类复核点：</strong>安全与可制造性</p>
+      </div>
+      <div class="card">
+        <h3>从技术设计到施工文件</h3>
+        <p><strong>输入：</strong>技术设计<br>
+        <strong>步骤：</strong>绘制图纸 → 零件表 → 工艺文件 → 检查<br>
+        <strong>输出：</strong>完整施工文件包<br>
+        <strong>失败风险：</strong>文件不一致<br>
+        <strong>人类复核点：</strong>完整性审查</p>
+      </div>
+    </div>
+    
+    <h2>命令示例（可直接复制给本地 Hermes）</h2>
+    <div class="card">
+      <p><strong>1. 把一个想法转成任务书</strong><br>
+      <code>请使用任务书澄清模板，把“AI 读书笔记网站”需求转化为结构化任务书。</code></p>
+      
+      <p><strong>2. 把任务书转成功能结构</strong><br>
+      <code>请使用功能分解模板，对已澄清的任务书进行功能结构分解。</code></p>
+      
+      <p><strong>3. 把三个方案转成评价矩阵</strong><br>
+      <code>请使用方案评价模板，对三个候选方案进行多维度评价并输出矩阵。</code></p>
+    </div>
+    
+    <hr>
+    <p><em>Phase 1C Agent 工作流页面。</em></p>
+  </div>
+</body>
+</html>

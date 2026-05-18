@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>工程设计方法论：从任务书到 CAD 的系统化设计流程</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1>工程设计方法论</h1>
+      <p>从任务书到 CAD 的系统化设计流程 —— 工程设计学学习与实践手册现代化版本</p>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- 十章内容地图 -->
+    <section class="section">
+      <h2>十章内容地图</h2>
+      <div class="card-grid" id="chapters">
+        <a href="chapters/unit1.html" class="card"><strong>Unit 1</strong><br>引言</a>
+        <a href="chapters/unit2.html" class="card"><strong>Unit 2</strong><br>基础</a>
+        <a href="chapters/unit3.html" class="card"><strong>Unit 3</strong><br>设计过程</a>
+        <a href="chapters/unit4.html" class="card"><strong>Unit 4</strong><br>制定产品计划和阐明任务</a>
+        <a href="chapters/unit5.html" class="card"><strong>Unit 5</strong><br>方案设计</a>
+        <a href="chapters/unit6.html" class="card"><strong>Unit 6</strong><br>技术设计</a>
+        <a href="chapters/unit7.html" class="card"><strong>Unit 7</strong><br>系列产品和组合产品的开发</a>
+        <a href="chapters/unit8.html" class="card"><strong>Unit 8</strong><br>施工设计</a>
+        <a href="chapters/unit9.html" class="card"><strong>Unit 9</strong><br>成本估算</a>
+        <a href="chapters/unit10.html" class="card"><strong>Unit 10</strong><br>计算机辅助设计</a>
+      </div>
+    </section>
+
+    <!-- 新增入口 -->
+    <section class="section">
+      <h2>扩展资源</h2>
+      <div class="card-grid">
+        <a href="cases/index.html" class="card"><strong>案例库</strong><br>5 个原创工程设计案例</a>
+        <a href="diagrams.html" class="card"><strong>方法论图解</strong><br>SVG 流程与矩阵</a>
+        <a href="agent-workflows.html" class="card"><strong>Agent 工作流</strong><br>可直接给 Hermes 的命令示例</a>
+      </div>
+      <p style="margin-top:12px; font-size:0.9rem; color:#666;">Hermes skill 草案位于 仓库 modernization 目录下的 skill 草案子目录（仅供参考）</p>
+    </section>
+
+    <!-- 方法论总流程 -->
+    <section class="section">
+      <h2>方法论总流程</h2>
+      <div class="flow-step" data-explanation="明确产品目标、约束与成功标准，是后续所有设计活动的出发点。"><strong>1. 产品计划与任务书</strong></div>
+      <div class="flow-step" data-explanation="把模糊需求转化为清晰、可验证的功能要求与性能指标。"><strong>2. 任务书澄清</strong></div>
+      <div class="flow-step" data-explanation="探索多种可能的解决方案，形成方案矩阵并进行初步评价。"><strong>3. 方案设计</strong></div>
+      <div class="flow-step" data-explanation="将选定方案细化为具体技术参数、材料、结构与制造工艺。"><strong>4. 技术设计</strong></div>
+      <div class="flow-step" data-explanation="完成详细施工图、工艺文件与生产准备。"><strong>5. 施工设计</strong></div>
+      <div class="flow-step" data-explanation="估算材料、加工、装配等全生命周期成本。"><strong>6. 成本估算</strong></div>
+      <div class="flow-step" data-explanation="利用 CAD/CAE 工具实现参数化建模、仿真与优化。"><strong>7. CAD / 软件辅助设计</strong></div>
+      <div id="flow-explanation" style="display:none; margin-top:20px; padding:20px; background:#fff; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.1);"></div>
+    </section>
+
+    <!-- 当前状态 -->
+    <section class="section">
+      <h2>当前状态</h2>
+      <span class="status">Phase 1C：章节 + 案例 + 图解 + Agent 工作流原型（本地未发布）</span>
+      <p>已生成 10 个章节页面、5 个案例、4 个 SVG 图解、Agent 工作流与 skill 草案。原始 rst 文件保留在仓库 modernization 目录下的 source_archive 子目录。</p>
+    </section>
+  </div>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

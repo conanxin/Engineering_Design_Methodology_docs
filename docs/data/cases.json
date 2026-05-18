@@ -1,0 +1,72 @@
+[
+  {
+    "id": "ai-reading-notes",
+    "title": "AI 读书笔记网站",
+    "scenario": "为个人知识管理打造一个支持 AI 辅助总结、检索和可视化的读书笔记平台。",
+    "design_task": "设计一个支持多格式导入、AI 摘要、语义搜索和可视化知识图谱的读书笔记网站。",
+    "must_requirements": ["支持 PDF/EPUB/Markdown 导入", "AI 摘要准确率 > 85%", "语义搜索响应 < 300ms", "支持知识图谱可视化"],
+    "wishes": ["支持多用户协作", "导出为多种格式", "移动端体验优秀"],
+    "function_structure": "总功能：知识管理 → 分功能：导入、AI处理、检索、可视化、导出",
+    "concept_options": ["RAG 架构", "本地 LLM", "图数据库", "静态站点生成"],
+    "evaluation_criteria": ["准确性", "隐私性", "性能", "可维护性", "成本"],
+    "recommended_route": "本地优先 + RAG + 静态生成 + Hermes Agent 辅助",
+    "reusable_templates": ["任务书澄清模板", "功能分解模板", "方案评价矩阵"],
+    "related_chapters": [1, 4, 5, 10]
+  },
+  {
+    "id": "github-pages-exhibit",
+    "title": "GitHub Pages 互动专题页",
+    "scenario": "将传统工程设计方法论整理为现代可交互的 GitHub Pages 专题。",
+    "design_task": "设计一个支持章节导航、案例演示、SVG 图解和 Agent 工作流入口的静态专题页。",
+    "must_requirements": ["纯静态可部署", "移动端友好", "无外部依赖", "支持深色模式"],
+    "wishes": ["支持搜索", "导出 PDF", "可嵌入视频"],
+    "function_structure": "总功能：知识展示 → 分功能：导航、内容渲染、交互、Agent入口",
+    "concept_options": ["纯 HTML/CSS/JS", "MkDocs", "Astro", "自定义生成"],
+    "evaluation_criteria": ["加载速度", "可访问性", "维护成本", "扩展性"],
+    "recommended_route": "纯静态 HTML + SVG + JSON 数据驱动",
+    "reusable_templates": ["章节页面模板", "案例页面模板"],
+    "related_chapters": [3, 7, 10]
+  },
+  {
+    "id": "auto-supply-processing-center",
+    "title": "自动供包处理中心方案",
+    "scenario": "设计一个中型物流自动供包处理中心的整体方案。",
+    "design_task": "在处理量 8000 件/小时的约束下，设计高效、安全、可扩展的自动供包处理中心。",
+    "must_requirements": ["处理量 ≥ 8000 件/小时", "误分率 < 0.5%", "安全符合 GB 标准", "支持 24 小时运行"],
+    "wishes": ["模块化扩展", "能耗降低 20%", "支持 AI 预测维护"],
+    "function_structure": "总功能：供包分拣 → 分功能：识别、输送、分拣、复核、输出",
+    "concept_options": ["皮带输送", "视觉识别", "机械臂分拣", "AGV 缓冲"],
+    "evaluation_criteria": ["吞吐量", "准确率", "安全性", "成本", "可扩展性"],
+    "recommended_route": "视觉 + 机械臂 + 模块化输送 + 数字孪生",
+    "reusable_templates": ["任务书澄清模板", "技术设计检查清单"],
+    "related_chapters": [4, 5, 6, 8]
+  },
+  {
+    "id": "modular-exhibition-guide",
+    "title": "模块化展览导览页面",
+    "scenario": "为科技展览设计一套可快速部署的模块化导览系统。",
+    "design_task": "设计支持多展区、AR 导览、实时人流统计的模块化展览导览方案。",
+    "must_requirements": ["模块化部署 < 2 小时", "支持 5000 人同时在线", "AR 延迟 < 100ms", "支持离线模式"],
+    "wishes": ["多语言", "数据分析看板", "低成本硬件"],
+    "function_structure": "总功能：导览服务 → 分功能：定位、内容推送、AR渲染、人流管理",
+    "concept_options": ["Beacon", "UWB", "视觉 SLAM", "WebXR"],
+    "evaluation_criteria": ["用户体验", "部署成本", "稳定性", "扩展性"],
+    "recommended_route": "WebXR + 边缘计算 + 模块化硬件",
+    "reusable_templates": ["方案评价矩阵", "施工设计文件检查清单"],
+    "related_chapters": [5, 7, 10]
+  },
+  {
+    "id": "local-agent-toolchain",
+    "title": "本地 Agent 工具链能力扩展",
+    "scenario": "扩展 Hermes Agent 支持工程设计方法论的完整工作流。",
+    "design_task": "设计一套可本地运行的 Agent 工具链，支持任务澄清、功能分解、方案评价和技术检查。",
+    "must_requirements": ["完全本地运行", "支持多模型切换", "输出结构化 JSON", "可离线使用"],
+    "wishes": ["支持语音输入", "多项目记忆", "可视化调试"],
+    "function_structure": "总功能：工程设计辅助 → 分功能：需求解析、方案生成、评价、输出模板",
+    "concept_options": ["本地 LLM", "RAG 知识库", "结构化输出", "多 Agent 协作"],
+    "evaluation_criteria": ["准确性", "隐私", "速度", "可扩展性"],
+    "recommended_route": "Hermes + 本地模型 + 结构化输出 + skill 框架",
+    "reusable_templates": ["所有工程设计模板"],
+    "related_chapters": [1, 4, 5, 10]
+  }
+]

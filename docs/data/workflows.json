@@ -1,0 +1,50 @@
+[
+  {
+    "id": "idea-to-task",
+    "title": "从想法到任务书",
+    "input": "原始想法或产品机会",
+    "steps": ["收集需求", "明确利益相关者", "撰写任务书初稿", "多轮澄清", "输出正式任务书"],
+    "output": "已澄清的任务书",
+    "suitable_for_agent": true
+  },
+  {
+    "id": "task-to-function",
+    "title": "从任务书到功能结构",
+    "input": "任务书",
+    "steps": ["提取总功能", "分解分功能", "建立功能结构", "定义输入输出"],
+    "output": "功能结构图",
+    "suitable_for_agent": true
+  },
+  {
+    "id": "function-to-principle",
+    "title": "从功能结构到作用原理",
+    "input": "功能结构",
+    "steps": ["搜索作用原理", "评估可行性", "选择候选原理", "生成作用结构"],
+    "output": "原理与结构方案",
+    "suitable_for_agent": true
+  },
+  {
+    "id": "principle-to-matrix",
+    "title": "从作用原理到方案矩阵",
+    "input": "作用原理",
+    "steps": ["组合方案变型", "建立评价准则", "填充评价矩阵", "筛选最优方案"],
+    "output": "推荐方案",
+    "suitable_for_agent": true
+  },
+  {
+    "id": "scheme-to-technical",
+    "title": "从方案到技术设计检查",
+    "input": "推荐方案",
+    "steps": ["参数计算", "结构设计", "工艺规划", "执行技术设计检查"],
+    "output": "技术设计文件",
+    "suitable_for_agent": true
+  },
+  {
+    "id": "technical-to-construction",
+    "title": "从技术设计到施工文件清单",
+    "input": "技术设计",
+    "steps": ["绘制图纸", "编制零件表", "生成工艺文件", "执行施工设计检查"],
+    "output": "完整施工文件包",
+    "suitable_for_agent": true
+  }
+]

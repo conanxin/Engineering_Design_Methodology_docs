@@ -1,0 +1,58 @@
+[
+  {
+    "id": "task-clarification",
+    "title": "任务书澄清检查",
+    "chapter": 4,
+    "items": ["目标是否清晰且可量化", "约束条件是否完整", "性能指标是否可验证", "利益相关者需求是否覆盖", "成功标准是否明确"],
+    "recommended_output": "正式任务书 + 澄清纪要"
+  },
+  {
+    "id": "must-vs-wish",
+    "title": "必达要求/愿望区分检查",
+    "chapter": 4,
+    "items": ["是否区分硬性约束与软性需求", "必达要求是否可验证", "愿望是否已排序"],
+    "recommended_output": "必达/愿望清单"
+  },
+  {
+    "id": "function-decomposition",
+    "title": "功能分解检查",
+    "chapter": 2,
+    "items": ["总功能是否单一明确", "分功能是否覆盖所有输入输出", "功能结构是否无遗漏"],
+    "recommended_output": "功能结构图"
+  },
+  {
+    "id": "working-principle",
+    "title": "作用原理搜索检查",
+    "chapter": 5,
+    "items": ["是否搜索至少3种原理", "原理是否与功能匹配", "可行性是否初步评估"],
+    "recommended_output": "原理列表与初步评价"
+  },
+  {
+    "id": "scheme-evaluation",
+    "title": "方案评价检查",
+    "chapter": 5,
+    "items": ["评价准则是否客观", "至少生成3个方案", "是否使用矩阵量化"],
+    "recommended_output": "方案矩阵 + 推荐方案"
+  },
+  {
+    "id": "technical-design",
+    "title": "技术设计检查",
+    "chapter": 6,
+    "items": ["材料是否匹配功能", "结构是否满足强度要求", "工艺是否可行", "公差是否合理"],
+    "recommended_output": "技术设计说明书"
+  },
+  {
+    "id": "construction-documents",
+    "title": "施工设计文件检查",
+    "chapter": 8,
+    "items": ["图纸是否完整", "零件表是否准确", "编号系统是否一致", "工艺文件是否齐全"],
+    "recommended_output": "完整施工文件包"
+  },
+  {
+    "id": "cost-estimation",
+    "title": "成本估算检查",
+    "chapter": 9,
+    "items": ["是否覆盖全生命周期", "敏感性分析是否完成", "降本机会是否识别"],
+    "recommended_output": "成本估算报告"
+  }
+]

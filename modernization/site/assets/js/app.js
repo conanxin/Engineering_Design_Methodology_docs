@@ -141,3 +141,59 @@ async function loadConcepts() {
     });
   }
 }
+// Phase 2C additions
+document.addEventListener('DOMContentLoaded', function() {
+  // Back to top button
+  const backToTop = document.createElement('button');
+  backToTop.className = 'back-to-top';
+  backToTop.innerHTML = '↑';
+  backToTop.setAttribute('aria-label', '返回顶部');
+  document.body.appendChild(backToTop);
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 400) {
+      backToTop.classList.add('visible');
+    } else {
+      backToTop.classList.remove('visible');
+    }
+  });
+
+  backToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // Mobile menu toggle
+  const nav = document.querySelector('.site-nav');
+  if (nav) {
+    const menuBtn = document.createElement('button');
+    menuBtn.className = 'mobile-menu-btn';
+    menuBtn.innerHTML = '☰';
+    menuBtn.setAttribute('aria-label', '打开菜单');
+    
+    const navLinks = nav.querySelector('.nav-links') || nav;
+    nav.insertBefore(menuBtn, navLinks);
+    
+    menuBtn.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+    });
+  }
+
+  // Generate simple page TOC for long pages
+  const tocContainer = document.querySelector('.page-toc');
+  if (tocContainer) {
+    const headings = document.querySelectorAll('h2, h3');
+    if (headings.length > 0) {
+      const ul = document.createElement('ul');
+      headings.forEach((h, i) => {
+        if (!h.id) h.id = 'section-' + i;
+        const li = document.createElement('li');
+        const a = document.createElement('a');
+        a.href = '#' + h.id;
+        a.textContent = h.textContent;
+        li.appendChild(a);
+        ul.appendChild(li);
+      });
+      tocContainer.appendChild(ul);
+    }
+  }
+});

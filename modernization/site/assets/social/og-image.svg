@@ -1,0 +1,44 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <title>工程设计方法论 - 分享封面</title>
+  <desc>工程设计方法论：从任务书澄清到 Agent 工作流的系统化方法论工具站</desc>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#f8fafc"/>
+  
+  <!-- Gradient accent bar -->
+  <rect x="0" y="0" width="1200" height="8" fill="#0ea5e9"/>
+  
+  <!-- Title -->
+  <text x="80" y="140" font-family="system-ui, -apple-system, sans-serif" font-size="56" font-weight="700" fill="#0f172a">
+    工程设计方法论
+  </text>
+  
+  <!-- Subtitle -->
+  <text x="80" y="200" font-family="system-ui, -apple-system, sans-serif" font-size="26" fill="#475569">
+    从任务书澄清、功能分解、方案评价到 Agent 工作流
+  </text>
+  
+  <!-- Flow line -->
+  <g fill="none" stroke="#0ea5e9" stroke-width="3">
+    <line x1="80" y1="320" x2="1120" y2="320"/>
+  </g>
+  
+  <!-- Flow steps -->
+  <g font-family="system-ui, -apple-system, sans-serif" font-size="18" fill="#334155">
+    <text x="80" y="290">想法</text>
+    <text x="260" y="290">任务书</text>
+    <text x="440" y="290">功能结构</text>
+    <text x="620" y="290">方案矩阵</text>
+    <text x="800" y="290">技术设计</text>
+    <text x="980" y="290">Agent 执行</text>
+  </g>
+  
+  <!-- Bottom text -->
+  <text x="80" y="560" font-family="system-ui, -apple-system, sans-serif" font-size="18" fill="#64748b">
+    Engineering Design Methodology · GitHub Pages
+  </text>
+  
+  <!-- Decorative element -->
+  <circle cx="1100" cy="140" r="40" fill="#e0f2fe"/>
+  <circle cx="1100" cy="140" r="28" fill="#0ea5e9"/>
+</svg>

@@ -115,3 +115,145 @@ body {
     grid-template-columns: 1fr;
   }
 }
+/* Phase 2C: Unified Navigation, Mobile, Visual Polish */
+.site-header {
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+}
+
+.site-nav a {
+  color: #334155;
+  text-decoration: none;
+  padding: 8px 16px;
+  font-weight: 500;
+  border-radius: 6px;
+}
+
+.site-nav a:hover,
+.site-nav a[aria-current="page"] {
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+.mobile-menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .site-nav .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    padding: 16px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  .site-nav .nav-links.open {
+    display: flex;
+  }
+  .mobile-menu-btn {
+    display: block;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+  .comparison-table {
+    display: block;
+    overflow-x: auto;
+  }
+  pre {
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+}
+
+/* Back to top */
+.back-to-top {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: #0f172a;
+  color: white;
+  border: none;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  font-size: 1.4rem;
+  cursor: pointer;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.3);
+  z-index: 200;
+}
+
+.back-to-top.visible {
+  display: flex;
+}
+
+/* Page TOC */
+.page-toc {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 32px;
+}
+
+.page-toc ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.page-toc a {
+  color: #475569;
+  text-decoration: none;
+}
+
+.page-toc a:hover {
+  color: #0f172a;
+}
+
+/* Enhanced visual elements */
+.prompt-card pre {
+  background: #0f172a;
+  color: #e0e7ff;
+  padding: 16px;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+.mini-case {
+  border-left: 4px solid #3b82f6;
+  padding-left: 16px;
+  margin: 24px 0;
+}
+
+.comparison-table th {
+  background: #f1f5f9;
+}

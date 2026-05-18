@@ -1,24 +1,10 @@
-# Engineering Design Methodology — GitHub Pages 发布目录
+# GitHub Pages 发布目录说明
 
-此目录由 modernization/site/ 生成，用于 GitHub Pages 发布。
+`docs/` 是本项目的 GitHub Pages 发布目录，包含最终可直接访问的静态站点文件。
 
-## 当前版本
-Phase 2A productized homepage
+## 说明
 
-## 新增内容
-- guide.html（使用指南）
-- templates.html（模板库）
-- concepts.html（概念索引）
-- 增强的首页搜索与阅读路径
-
-## 推荐设置
-- GitHub Pages 源：modernization/github-pages-prototype 分支
-- 文件夹：/docs
-
-## 发布前检查清单
-- 首页、指南、模板、概念页均可正常访问
-- 搜索功能可用
-- 复制按钮正常
-- 移动端布局正常
-
-**注意**：本项目仅为方法论演示与学习用途。
+- 根目录 `README.md` 是仓库整体说明文档。
+- `docs/` 中的内容为当前发布的 GitHub Pages 版本。
+- 当前发布版本为 **Phase 2 complete**。
+- 不建议直接手改 `docs/` 下的文件，优先修改 `modernization/site/` 后再同步。
